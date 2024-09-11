@@ -1,10 +1,11 @@
 import './App.css';
-import { BarraNavegacionSuperior } from './components/barra-navegacion-superior/barra-navegacion-superior.jsx';
+import Navbar from './components/Navbar/Navbar.jsx'
+// import { BarraNavegacionSuperior } from './components/barra-navegacion-superior/barra-navegacion-superior.jsx';
 
 function App() {
   return (
-    <div className="App">
-   <BarraNavegacionSuperior />
+    <div className='container'>
+      <Navbar/>
     </div>
   );
 }

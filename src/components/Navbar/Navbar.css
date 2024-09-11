@@ -1,0 +1,72 @@
+/* Navbar.css */
+@import url('../../assets/icons/css/bb-icons.css');
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 7%;
+}
+
+.imagotipo {
+    width: 150px;
+    cursor: pointer;
+    /* margin-left: 100px; */
+}
+
+.icon-list {
+    flex: 1;
+    /* list-style: none; */
+    text-align: center;
+    /* margin-left: 10px; */
+}
+
+.icon-list li {
+    display: inline-block;
+    margin: 10px 25px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+.profile-list {
+    /* flex: 1; */
+    /* list-style: none; */
+    text-align: center;
+    align-items: center;
+    /* margin-left: -200px; */
+}
+
+.profile-list li {
+    display: inline-block;
+    /* align-items: center; */
+    margin: 0 10px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+.divider {
+    width: 1px;
+    height: 25px;
+    background-color: #d7d8d9;
+}
+
+.username {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile li {
+    /* flex: 1; */
+    display: inline-block;
+}
