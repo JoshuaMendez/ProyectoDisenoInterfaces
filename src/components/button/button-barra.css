@@ -1,0 +1,22 @@
+.icon-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 40px 400px;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    /* display: flex; */
+}
+
+.image-top-right {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+
