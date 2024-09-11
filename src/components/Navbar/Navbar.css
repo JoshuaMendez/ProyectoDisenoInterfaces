@@ -70,3 +70,33 @@
     /* flex: 1; */
     display: inline-block;
 }
+
+/* Responsive */
+@media (max-width: 915px) {
+    .profile-list {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .profile-list li {
+        /* display: inline-block; */
+        /* align-items: center; */
+        margin: 0 10px;
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
+    }
+    .profile-pic {
+        display: none;
+    }
+    .username {
+        display: none;
+    }
+    .icon-list {
+        display: none;
+    }
+    .imagotipo {
+        width: calc(15vw + 50px);
+    }
+}
