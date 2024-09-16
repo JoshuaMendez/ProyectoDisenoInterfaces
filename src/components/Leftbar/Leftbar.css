@@ -1,0 +1,72 @@
+/* Leftbar */
+@import url('../../assets/icons/css/bb-icons.css');
+
+.leftbar {
+    height: 100%;
+    width: 70px;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.icon-list-left {
+    top: 10 px;
+    list-style: none;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.icon-list-left li {
+    display: inline-block;
+    margin: 10px 25px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+#header-desplegable{
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    margin: 10px 20px;
+
+}
+
+.divider-horizontal {
+    width: 25px;
+    height: 1px;
+    background-color: #d7d8d9;
+}
+.barExpandida{
+    width: 200px;
+    transition: 0.5s;
+    height: 100%;
+    background : white;
+    position: fixed;
+    top: 0;
+}
+.rellenoBarExpandida{
+    top: 10 px;
+    list-style: none;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: space-between;
+}
+span{
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+    font-size: 12px;
+    
+}
+h4{
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+    font-size: 12px;
+    position: relative;
+}
