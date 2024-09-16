@@ -2,16 +2,17 @@
 @import url('../../assets/icons/css/bb-icons.css');
 
 
-.bloque-blog{
-    width: 15%;
-    height: 70%;
+.bloque-blog {
+    width: 100%; /* Ajustar el ancho para que ocupe toda la columna */
+    height: auto; /* Ajustar la altura automáticamente */
     background: white;
-    position: fixed;
-  
     border-radius: 10px;
     border: 1px solid lightgray;
-    font-family:apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+    font-family: apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+    margin: 10px 0; /* Añadir margen para separar el bloque de otros elementos */
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho y la altura */
 }
+
 .boton-blog{
     font-weight: 800;
     font-size: 12px;
