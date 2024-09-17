@@ -2,37 +2,13 @@
 @import url('../../assets/icons/css/bb-icons.css');
 
 
-.bloque-blog {
-    width: 100%; /* Ajustar el ancho para que ocupe toda la columna */
-    height: auto; /* Ajustar la altura automáticamente */
+.bloque-blog{
+    width: 15%;
+    height: 70%;
     background: white;
+    position: fixed;
+    top: 20%;
+    left: 15%;
     border-radius: 10px;
     border: 1px solid lightgray;
-    font-family: apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
-    margin: 10px 0; /* Añadir margen para separar el bloque de otros elementos */
-    box-sizing: border-box; /* Incluir el padding y el borde en el ancho y la altura */
-}
-
-.boton-blog{
-    font-weight: 800;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    border-radius: 4px;
-    display: inline-block;
-    background-color: rgb(167, 165, 165) ;
-    border: 1px solid rgb(187, 181, 181);
-    position : relative;
-    top: 80%;
-    left: 10%;
-}
-
-#title-blog{
-    font-size: 14px;
-    top: 10 px;
-    left: 10px;
-    list-style: none;
-    padding : 10px;
-    position: relative;
-
 }
