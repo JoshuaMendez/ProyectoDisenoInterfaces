@@ -1,13 +1,14 @@
 import './Share.css';
+import man from '../../assets/images/models/man.jpg';
 
 function App() {
     return (
         <div className="share">
         <div className="shareWrapper">
             <div className="shareTop">
-            <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
+            <img className="shareProfileImg" src={man} alt="Profile"/>
             <input
-                placeholder="What's in your mind Safak?"
+                placeholder="Share what's on your mind, John"
                 className="shareInput"
             />
             </div>
@@ -15,20 +16,19 @@ function App() {
             <div className="shareBottom">
                 <div className="shareOptions">
                     <div className="shareOption">
-                        <PermMedia htmlColor="tomato" className="shareIcon"/>
-                        <span className="shareOptionText">Photo or Video</span>
+                        <span className="bb-icon-f bb-icon-camera shareIcon"></span>
                     </div>
                     <div className="shareOption">
-                        <Label htmlColor="blue" className="shareIcon"/>
-                        <span className="shareOptionText">Tag</span>
+                        <span className="bb-icon-f bb-icon-video shareIcon"></span>
                     </div>
                     <div className="shareOption">
-                        <Room htmlColor="green" className="shareIcon"/>
-                        <span className="shareOptionText">Location</span>
+                        <span className="bb-icon-f bb-icon-attach shareIcon"></span>
                     </div>
                     <div className="shareOption">
-                        <EmojiEmotions htmlColor="goldenrod" className="shareIcon"/>
-                        <span className="shareOptionText">Feelings</span>
+                        <span className="bb-icon-f bb-icon-gif shareIcon"></span>
+                    </div>
+                    <div className="shareOption">
+                        <span className="bb-icon-f bb-icon-poll shareIcon"></span>
                     </div>
                 </div>
                 <button className="shareButton">Share</button>

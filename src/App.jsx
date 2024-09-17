@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar.jsx'
 import Leftbar from './components/Leftbar/Leftbar.jsx'
 import Blog from './components/blog/blog.jsx'
-// import Share from './components/Share/Share.jsx'
+import Share from './components/Share/Share.jsx'
 
 function App() {
   return (
@@ -14,7 +14,10 @@ function App() {
           <Blog />
         </div>
         <div className='column'>
-          {/* <Share /> */}
+          <div className='seccion'>
+            <h1>Activity Feed</h1>
+          </div>
+          <Share />
         </div>
         <div className='column'>
           <Blog />
