@@ -1,5 +1,5 @@
 import './Share.css';
-import man from '../../assets/images/models/man.jpg';
+import man from '../../assets/images/person/1.png';
 
 function App() {
     return (

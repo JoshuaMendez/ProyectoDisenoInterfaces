@@ -3,6 +3,8 @@ import Navbar from './components/Navbar/Navbar.jsx'
 import Leftbar from './components/Leftbar/Leftbar.jsx'
 import Blog from './components/blog/blog.jsx'
 import Share from './components/Share/Share.jsx'
+import Post from './components/Post/Post.jsx'
+import Feed from './components/Feed/Feed.jsx'
 
 function App() {
   return (
@@ -15,9 +17,9 @@ function App() {
         </div>
         <div className='column'>
           <div className='seccion'>
-            <h1>Activity Feed</h1>
+            <h1 className='activity-feed-title'>Activity Feed</h1>
           </div>
-          <Share />
+          <Feed />
         </div>
         <div className='column'>
           <Blog />
