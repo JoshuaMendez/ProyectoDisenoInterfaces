@@ -4,11 +4,13 @@ import './ProfilePage.css';
 import profilePic from '../../assets/images/person/1.png'; 
 import Navbar from '../../components/Navbar/Navbar';
 import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent'; // Asegúrate de que la ruta sea correcta
+import leftBar from '../../components/Leftbar/Leftbar';
 
 const ProfilePage = () => {
     return (
         <div className="profile-page">
             <Navbar />
+            <leftBar />
             <UserProfileComponent
                 name='John' 
                 followers='15' 
