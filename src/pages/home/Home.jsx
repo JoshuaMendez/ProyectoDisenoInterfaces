@@ -7,6 +7,9 @@ import Blog from '../../components/blog/blog.jsx'
 import Share from '../../components/Share/Share.jsx'
 import Post from '../../components/Post/Post.jsx'
 import Feed from '../../components/Feed/Feed.jsx'
+import latestUpdates from '../../components/latest-updates/latestUpdates.jsx'
+import Following from '../../components/following/following.jsx'
+
 
 function Home() {
     return (
@@ -16,6 +19,7 @@ function Home() {
         <div className='columns'>
             <div className='column'>
             <Blog />
+            <Following />
             </div>
             <div className='column'>
             <div className='seccion'>
@@ -24,7 +28,7 @@ function Home() {
             <Feed />
             </div>
             <div className='column'>
-            <Blog />
+            <latestUpdates />
             </div>
         </div>
         </div>

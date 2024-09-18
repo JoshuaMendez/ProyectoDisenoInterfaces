@@ -1,0 +1,29 @@
+/* Leftbar */
+@import url('../../assets/icons/css/bb-icons.css');
+
+
+.bloque-following{
+    max-width: 250px; 
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    font-family: apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+}
+
+.amigos{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+#titulo-following{
+    color:#393E41;
+    font-size: 20px;
+}
+#numero-folowing{
+    color:#c4c4c4;
+    font-size: 18px;
+}
