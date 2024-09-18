@@ -1,5 +1,6 @@
 // Navbar.jsx
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import './Navbar.css';
 import imagotipo from '../../assets/images/imagotipo.png';
 import '../../assets/icons/css/bb-icons.css';
@@ -8,10 +9,18 @@ import man from '../../assets/images/person/1.png';
 const Navbar = () => {
     return (
         <div className='navbar'>
-            <img src={imagotipo} className='imagotipo' />
+            <Link to ="/">
+                <img src={imagotipo} className='imagotipo' alt="Logo" />
+            </Link>
             <ul className='icon-list'>
                 <li><i className="bb-icon-l bb-icon-activity"></i></li>
-                <li><i className="bb-icon-l buddyboss bb-icon-user-avatar"></i></li>
+            
+                <li>
+                    <Link to="/profile">
+                        <i className="bb-icon-l buddyboss bb-icon-user-avatar"></i>
+                    </Link>
+                </li>
+                
                 <li><i className="bb-icon-l buddyboss bb-icon-user-friends-alt"></i></li>
                 <li><i className="bb-icon-l buddyboss bb-icon-comment-square-dots"></i></li>
             </ul>
@@ -22,8 +31,8 @@ const Navbar = () => {
                 <li><i className="bb-icon-l bb-icon-bell"></i></li>
                 <li><p className='username'>John</p></li>
             </ul>
-            <ul className='profile'>
-                <li><img src={man} className='profile-pic' /></li>
+            <ul className='profile-nav'>
+                <li><img src={man} className='profile-pic' alt="Profile" /></li>
             </ul>
         </div>
     );

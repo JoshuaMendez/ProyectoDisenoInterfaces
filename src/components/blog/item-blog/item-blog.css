@@ -1,29 +1,34 @@
-
 .blog-item {
     display: flex;
-    flex-direction: flex-start;
     width: 100%;
-    height: 20%;;
+    height: 20%;
     border: 1px solid #dddddd;
     border-radius: 8px;
     background-color: #fcfcfc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Asegúrate de que el padding y el borde se incluyan en el tamaño total */
+    overflow: hidden; /* Evita que el contenido se desborde */
 }
 
-
 .blog-image {
-    padding-top: center;
     width: 35%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 10px;
     cursor: pointer;
     transition: transform 0.2s;
+    object-fit: cover; /* Asegúrate de que la imagen se ajuste dentro de su contenedor */
 }
-.blog-title{
+
+.blog-content {
+    flex-grow: 1; /* Permite que el contenido crezca para llenar el espacio disponible */
+    padding: 10px; /* Añade padding para separar el contenido de los bordes */
+    box-sizing: border-box; /* Asegúrate de que el padding se incluya en el tamaño total */
+}
+
+.blog-title {
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
     font-size: 14px;
-    position : relative;
+    position: relative;
     padding-top: 10%;
     color: #393E41;
     margin-bottom: 10px;
@@ -35,11 +40,8 @@
     color: orange;
 }
 
-.blog-date{
+.blog-date {
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
     font-size: 12px;
     color: #393E41;
-    margin-bottom: 10px;
-    position: relative;
-    
 }

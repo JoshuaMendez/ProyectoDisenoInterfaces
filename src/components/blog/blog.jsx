@@ -24,11 +24,18 @@ const blogPosts = [
 const Blog = () => {
     return (
         <div class = "bloque-blog">
-            <h2>Blog</h2>
-            {blogPosts.map((post, index) => (
-                <ItemBlog key={index} image={post.image} title={post.title} date={post.date} />
-            ))}
-            <button id = "boton-seeAll">See all</button>
+            <div class = "title-blog">
+                <h2>Blog</h2>
+            </div>
+            <div class = "post-blog">
+                {blogPosts.map((post, index) => (
+                    <ItemBlog key={index} image={post.image} title={post.title} date={post.date} />
+                ))}
+            </div>
+            <div class = "button-blog">
+                <button id = "boton-seeAll">See all</button>
+            </div>
+            
         </div>
     );
 }

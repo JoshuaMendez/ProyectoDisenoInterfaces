@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import Navbar from '../../components/Navbar/Navbar.jsx'
 import Leftbar from '../../components/Leftbar/Leftbar.jsx'
@@ -6,7 +8,7 @@ import Share from '../../components/Share/Share.jsx'
 import Post from '../../components/Post/Post.jsx'
 import Feed from '../../components/Feed/Feed.jsx'
 
-function App() {
+function Home() {
     return (
         <div className='container'>
         <Navbar />
@@ -29,4 +31,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;
