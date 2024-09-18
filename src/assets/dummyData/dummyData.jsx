@@ -59,7 +59,24 @@ export const Posts = [
     date: "5 mins ago",
     userId: 1,
     like: 32,
-    comment: 9,
+    commentsNumber: 9,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[4].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[4].username,
+        comment : "I've been there"    
+        }
+    ]   
 },
 {
     id: 2,
@@ -67,7 +84,24 @@ export const Posts = [
     date: "15 mins ago",
     userId: 2,
     like: 2,
-    comment: 1,
+    commentsNumber: 1,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "I've been there"    
+        }
+    ]   
 },
 {
     id: 3,
@@ -76,7 +110,24 @@ export const Posts = [
     date: "1 hour ago",
     userId: 3,
     like: 61,
-    comment: 2,
+    commentsNumber: 2,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "I've been there"    
+        }
+    ]   
 },
 {
     id: 4,
@@ -84,7 +135,24 @@ export const Posts = [
     date: "4 hours ago",
     userId: 4,
     like: 7,
-    comment: 3,
+    commentsNumber: 3,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "I've been there"    
+        }
+    ]   
 },
 {
     id: 5,
@@ -92,7 +160,24 @@ export const Posts = [
     date: "5 hours ago",
     userId: 5,
     like: 23,
-    comment: 5,
+    commentsNumber: 5,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "I've been there"    
+        }
+    ] 
 },
 {
     id: 6,
@@ -100,7 +185,24 @@ export const Posts = [
     date: "1 day ago",
     userId: 6,
     like: 44,
-    comment: 6,
+    commentsNumber: 6,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].profileUsername,
+        comment : "I've been there"    
+        }
+    ] 
 },
 {
     id: 7,
@@ -109,7 +211,24 @@ export const Posts = [
     date: "2 days ago",
     userId: 7,
     like: 52,
-    comment: 3,
+    commentsNumber: 3,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "I've been there"    
+        }
+    ] 
 },
 {
     id: 8,
@@ -117,7 +236,24 @@ export const Posts = [
     date: "3 days ago",
     userId: 8,
     like: 15,
-    comment: 1,
+    commentsNumber: 1,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "I've been there"    
+        }
+    ] 
 },
 {
     id: 9,
@@ -126,7 +262,24 @@ export const Posts = [
     date: "5 days ago",
     userId: 9,
     like: 11,
-    comment: 2,
+    commentsNumber: 2,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "I've been there"    
+        }
+    ] 
 },
 {
     id: 10,
@@ -134,6 +287,23 @@ export const Posts = [
     date: "1 week ago",
     userId: 10,
     like: 104,
-    comment: 12,
+    commentsNumber: 12,
+    comment : [
+        {
+        profilePicture :  Users[2].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Dude what a chimba, invite"
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "Wow i love Nature 🍃"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        comment : "I've been there"    
+        }
+    ] 
 },
 ];

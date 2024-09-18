@@ -35,13 +35,34 @@ export default function Post({ post }) {
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <img className="likeIcon" src="assets/like.png" onClick={likeHandler} alt="" />
-                        <img className="likeIcon" src="assets/heart.png" onClick={likeHandler} alt="" />
+                        <div className={isLiked? "bb-icon-l bb-icon-heart" : "bb-icon-f bb-icon-heart like-post-unClicked"}  onClick={likeHandler}></div>
                         <span className="postLikeCounter">{like} people like it</span>
                     </div>
                     <div className="postBottomRight">
-                        <span className="postCommentText">{post.comment || 0} comments</span>
+                        <span className="postCommentText">{post.commentsNumber || 0} comments</span>
                     </div>
+                </div>
+                <div className="postComments">
+                    {post.comment.map((comment, i) => (
+                        <span key = {i}>
+                        <div className="profile-comment"> 
+                            <div className="profile-picture-comment">
+                                <img
+                                className="postProfileImg"
+                                src={comment?.profilePicture || "default-profile.png"} // Imagen predeterminada si falta la imagen
+                                alt=""
+                                />
+                            </div>
+                            <div className="text-comment">
+                                <span className="postUsername">{comment?.profileUsername || "Unknown"}</span>
+                                <br/>
+                                {comment.comment}
+                            </div>
+                            <div className="relleno-comment"></div>
+                        </div>
+                        </span>
+                    ))}
+
                 </div>
             </div>
         </div>
