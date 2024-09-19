@@ -1,0 +1,50 @@
+.bloque-chat{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-sizing: border-box; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+    }
+
+.bloque-chat:hover {
+        background-color: rgb(104, 104, 255);
+}
+
+
+.bloque-chat img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#info-chat{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#info-chat h2 {
+    font-size: 14px;
+    color: #393E41;
+    margin: 0;
+    
+}
+.message-content{
+    font-size: 10px;
+    color: #393E41;
+}
+
+.message-content span{
+    margin-left: 5px;
+    font-size: 8px;
+    color: #a4a4a4;
+}
+

@@ -26,7 +26,7 @@ const Navbar = () => {
                 </li>
                 
                 <li>
-                    <Link to="/groups">
+                    <Link to="/courses">
                         <i className="bb-icon-l buddyboss bb-icon-user-friends-alt"></i>
                     </Link>
                 </li>
