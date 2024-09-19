@@ -25,17 +25,17 @@ const SubProfile = () => {
                 </Link>
             </li>
             <li>
-                <Link to="/profile">
+                <Link to="/courses">
                     <i className="in-subprofile-list">Courses</i>
                 </Link>
             </li>
             <li>
-                <Link to="/profile">
+                <Link to="/documents">
                     <i className="in-subprofile-list">Documents</i>
                 </Link>
             </li>
             <li>
-                <Link to="/profile">
+                <Link to="/photos">
                     <i className="in-subprofile-list">Photos</i>
                 </Link>
             </li>
