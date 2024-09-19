@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-page-timeline {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fbfaf8; */
+}
+
+.content-timeline {
+    display: flex;
+    width: 100%;
+}
+
+.left-column-profile-timeline {
+    width: 13%;
+}
+
+.middle-column-profile-timeline {
+    width: 70%;
+    padding-bottom: 100px;
+}
+
+.right-column-profile-timeline {
+    width: 28%;
+    padding-top: 50px;
+}
+
+.spacer-column-profile-timeline {
+    width: 4%;
+    background-color: transparent;
+}
+.middle-colum-down-timeline{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.firts-middle-column-timeline{
+    width: 36%;
+}
+
+.Feed-timeline{
+    width: 60%;
+}

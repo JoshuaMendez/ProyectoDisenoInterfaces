@@ -1,8 +1,6 @@
 import React from 'react';
 // timeline copia de profilepage
 import './ProfilePage.css'
-import { Link } from 'react-router-dom';
-import profilePic from '../../assets/images/person/1.png'; 
 import Navbar from '../../components/Navbar/Navbar';
 import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx'; // Asegúrate de que la ruta sea correcta
 import LeftBar from '../../components/Leftbar/Leftbar';
