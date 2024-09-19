@@ -62,11 +62,11 @@
     align-items: justify;
     justify-content: space-between;
 }
-span{
+/* span{
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
     font-size: 12px;
     
-}
+} */
 h4{
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
     font-size: 12px;

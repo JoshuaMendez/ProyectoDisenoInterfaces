@@ -25,10 +25,12 @@ export default function Post({ post }) {
                             src={user?.profilePicture || "default-profile.png"} // Imagen predeterminada si falta la imagen
                             alt=""
                         />
-                        <span className="postUsername">{user?.username || "Unknown"}</span>
-                        <span className="postDate">{post.date || "Unknown date"}</span>
+                        <span className="postUsername-feed">
+                            <span className="publisher-post"><strong>{user?.username || "Unknown"}</strong> posted an update</span>
+                            <span className="postDate">{post.date || "Unknown date"}</span>
+                        </span>
                     </div>
-                    <div className="postTopRight"></div>
+                    {/* <div className="postTopRight"></div> */}
                 </div>
                 <div className="postCenter">
                     <span className="postText">{post?.desc || "No description available."}</span>
@@ -36,37 +38,48 @@ export default function Post({ post }) {
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <div className={isLiked? "bb-icon-f bb-icon-heart like-post-unClicked" : "bb-icon-l bb-icon-heart"}  onClick={likeHandler}></div>
+                        
                         <span className="postLikeCounter">{like} people like it</span>
                     </div>
                     <div className="postBottomRight">
                         <span className="postCommentText">{post.commentsNumber || 0} comments</span>
                     </div>
                 </div>
-                <Comment comments = {post.comment} ></Comment>
-                <div className="commentInputWrapper">
-                    <div className="input-comment">
-                        <div className="profile-picture-comment">
-                            <img
-                            className="postProfileImg"
-                            src={user?.profilePicture || 'default-profile.png'}
-                            alt=""
-                            />
-                        </div>
-                        <div className="comment-container">
-                            <input
-                                type="text"
-                                className="commentInputField"
-                                placeholder="Add a comment..."
-                            />
-                            <div className={"bb-icon-f bb-icon-camera icon-comment"}></div>
-                            <div className={"bb-icon-f bb-icon-video  icon-comment"}></div>
-                            <div className={"bb-icon-f bb-icon-file-attach  icon-comment"}></div>
-                            <div className={"bb-icon-f bb-icon-gif  icon-comment"}></div>
+                <div className="post-divider-line"></div>
+                <div className="love-and-comment">
+                    <div className="post-love">
+                        <div className={isLiked? "bb-icon-f bb-icon-heart like-post-unClicked" : "bb-icon-l bb-icon-heart"}  onClick={likeHandler}> <span className="in-love-no-color">Love</span></div>
+                    </div>
+                    <div className="post-comment-inner">
+                        <div className="bb-icon-l bb-icon-comment-square"><span className="in-comment-inner">Comment</span></div>
+                    </div>
+                </div>
+                <div className="post-divider-line"></div>
+                <div className="post-comment">
+                    <Comment comments = {post.comment} ></Comment>
+                    <div className="commentInputWrapper">
+                        <div className="input-comment">
+                            <div className="profile-picture-comment">
+                                <img
+                                className="postProfileImg"
+                                src={user?.profilePicture || 'default-profile.png'}
+                                alt=""
+                                />
+                            </div>
+                            <div className="comment-container">
+                                <input
+                                    type="text"
+                                    className="commentInputField"
+                                    placeholder="Add a comment..."
+                                />
+                                <div className={"bb-icon-f bb-icon-camera icon-comment"}></div>
+                                <div className={"bb-icon-f bb-icon-video  icon-comment"}></div>
+                                <div className={"bb-icon-f bb-icon-file-attach  icon-comment"}></div>
+                                <div className={"bb-icon-f bb-icon-gif  icon-comment"}></div>
+                            </div>
                         </div>
                     </div>
-
-    </div>
+                </div>
             </div>
         </div>
     );
