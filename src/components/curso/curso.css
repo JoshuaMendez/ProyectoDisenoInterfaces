@@ -1,0 +1,61 @@
+.bloque-curso{
+    width: 250px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid lightsteelblue;
+    left : 100px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    .bloque-curso:hover {
+        background-color: rgba(255, 165, 0, 0.5);
+}
+.portada-curso{
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.portada-curso img{
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.informacion-curso{
+    width: 100%;
+    height: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid lightsteelblue;
+}
+#start-curso{
+    position: relative;
+    top: 10px;
+    left: 0;
+    background: rgb(246, 152, 37);
+    width: 100px;
+    height: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.curso-lecciones {
+    font-size: 12px;
+    color: lightgray;
+    margin-left: 10px;
+}
+
+.curso-titulo {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
