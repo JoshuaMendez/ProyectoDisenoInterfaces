@@ -10,7 +10,7 @@ import InboxIcon from './inboxInteractive/inboxInteractive';
 
 const Navbar = () => {
     return (
-        <div className='navbar'>
+        <nav className='navbar'>
             <Link to ="/">
                 <img src={imagotipo} className='imagotipo' alt="Logo" />
             </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </nav>
     );
 }
 

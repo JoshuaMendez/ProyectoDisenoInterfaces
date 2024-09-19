@@ -11,7 +11,7 @@ import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
 
 function ProfilePage() {
     return (
-        <div className="profile-page">
+        <header className="profile-page">
             <Navbar />
             <LeftBar />
             <div className="content">
@@ -44,7 +44,7 @@ function ProfilePage() {
                     <LatestUpdates />
                 </div>
             </div>
-        </div>
+        </header>
     );
 }
 

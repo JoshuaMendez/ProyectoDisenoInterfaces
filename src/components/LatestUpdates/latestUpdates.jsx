@@ -8,17 +8,17 @@ const updates = [
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnXe_ieqBthtJEu_APkg9ECuUwhIOI4IVtg&s',
         title: 'John posted an update',
-        date: '3 years ago'
+        date: '1 minute ago'
     },
     {
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnXe_ieqBthtJEu_APkg9ECuUwhIOI4IVtg&s',
+        image: 'https://a.ltrbxd.com/resized/sm/upload/db/2x/a6/v6/harrypotter-1200-1200-675-675-crop-000000.jpg?v=7f87bbd1ff',
         title: 'Adele posted an update',
-        date: '3 years ago'
+        date: '20 minutes ago'
     },
     {
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnXe_ieqBthtJEu_APkg9ECuUwhIOI4IVtg&s',
-        title: 'John posted an update ',
-        date: '3 years ago'
+        image: 'https://th.bing.com/th/id/OIP.WGbPMH8cEmqepMQ_ZQ-i6wHaKD?rs=1&pid=ImgDetMain',
+        title: 'Gabriel posted an update ',
+        date: '1 hour ago'
     }
 ];
 
