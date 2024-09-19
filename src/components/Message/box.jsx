@@ -38,7 +38,7 @@ const Box = () => {
             </div>
             <div id = "chat">
                 <h3 id = "fecha">April 7, 2020</h3>
-                <Mensaje nombre="Juliana" mensaje= "Jhosua gay" hora=" 3:00 AM" image="https://media.licdn.com/dms/image/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_200_200/0/1715274045600?e=2147483647&v=beta&t=6fvPqhD8LWK_kcsVnpNEvkyTyOLI-APzYCUKhC34MxA" />
+                <Mensaje nombre="Juliana" mensaje= "Jhosua me ignora" hora=" 3:00 AM" image="https://media.licdn.com/dms/image/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_200_200/0/1715274045600?e=2147483647&v=beta&t=6fvPqhD8LWK_kcsVnpNEvkyTyOLI-APzYCUKhC34MxA" />
             
             </div>
             <div id = "teclado">

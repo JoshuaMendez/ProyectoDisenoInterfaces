@@ -52,6 +52,7 @@
     background : white;
     position: fixed;
     top: 0;
+    z-index: 1001;
 }
 .rellenoBarExpandida{
     top: 10 px;

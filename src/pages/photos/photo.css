@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photo-page {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fbfaf8; */
+}
+
+.content-photo {
+    display: flex;
+    width: 100%;
+}
+
+.left-column-profile-photo {
+    width: 13%;
+}
+
+.middle-column-profile-photo {
+    width: 70%;
+    padding-bottom: 100px;
+}
+
+.right-column-profile-photo {
+    width: 28%;
+    padding-top: 50px;
+}
+
+.spacer-column-profile-photo {
+    width: 2%;
+    background-color: transparent;
+}

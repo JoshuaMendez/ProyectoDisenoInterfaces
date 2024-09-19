@@ -5,6 +5,8 @@ import './Navbar.css';
 import imagotipo from '../../assets/images/imagotipo.png';
 import '../../assets/icons/css/bb-icons.css';
 import man from '../../assets/images/person/1.png';
+import NotificationIcon from './notifications/notification';
+import InboxIcon from './inboxInteractive/inboxInteractive';
 
 const Navbar = () => {
     return (
@@ -38,14 +40,22 @@ const Navbar = () => {
                 </li>
             </ul>
             <ul className='profile-list'>
-                <li><i className ="bb-icon-l bb-icon-search"></i></li>
+                <li><i className ="bb-icon-f bb-icon-search"></i></li>
                 <li><div className='divider'></div></li>
-                <li><i className="bb-icon-l bb-icon-inbox"></i></li>
-                <li><i className="bb-icon-l bb-icon-bell"></i></li>
-                <li><p className='username'>John</p></li>
+                <li><InboxIcon></InboxIcon></li>
+                <li><NotificationIcon></NotificationIcon></li>
+                <li>
+                    <Link to = "/profile">
+                    <p className='username'>John</p>
+                    </Link>
+                </li>
             </ul>
             <ul className='profile-nav'>
-                <li><img src={man} className='nav-profile-pic' alt="Profile" /></li>
+                <li>
+                    <Link to = "/profile">
+                    <img src={man} className='nav-profile-pic' alt="Profile" />
+                    </Link>
+                </li>
             </ul>
         </div>
     );
