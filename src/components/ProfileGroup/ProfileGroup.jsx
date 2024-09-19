@@ -1,6 +1,6 @@
 import React from 'react';
 // timeline copia de profilepage
-import './ProfilePage.css'
+import './ProfileGroup.css'
 import { Link } from 'react-router-dom';
 import profilePic from '../../assets/images/person/1.png'; 
 import Navbar from '../../components/Navbar/Navbar';
@@ -11,7 +11,7 @@ import GeneralProfile from '../../components/GeneralProfile/GeneralProfile'
 import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
 
 
-function ProfilePage() {
+function Timeline() {
     return (
         <div className="profile-page">
             <Navbar />
@@ -36,7 +36,7 @@ function ProfilePage() {
                         <SubProfile />
                     </div>
                     <div className="general-profile-container">
-                        <GeneralProfile />
+                        {/* <GeneralProfile /> */}
                     </div>
                 </div>
                 <div className="spacer-column-profile">
@@ -50,4 +50,4 @@ function ProfilePage() {
     );
 }
 
-export default ProfilePage;
+export default Timeline;

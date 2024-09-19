@@ -2,14 +2,15 @@ import React from 'react';
 import './following.css';
 import '../../assets/icons/css/bb-icons.css';
 import IconoFriend from './icono-friend/icono-friend.jsx';
+import bla from '../../assets/images/person/1.png'
 const amigos = [
     {
-        nombre: 'Isabela Pacheco',
+        nombre: 'Isabella Pacheco',
         imagen: 'https://media.licdn.com/dms/image/v2/D4E03AQGUnF-fto0ZeQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723948377144?e=2147483647&v=beta&t=_2n7ephi68j0SipR2Oqy1GC7MlSEjPhfzJjgW378FEQ'
     },
     {
         nombre: 'Jane Smith',
-        imagen: 'path/to/jane_image.jpg'
+        imagen: bla
     },
     {
         nombre: 'Sam Wilson',

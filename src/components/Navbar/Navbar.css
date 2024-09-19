@@ -7,7 +7,11 @@
     align-items: center;
     justify-content: space-between;
     background: #fff;
-    padding: 15px 7%;
+    padding: 4px 13%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgba(139, 141, 157, 0.05) 0px 1px 0px 0px, rgba(65, 71, 108, 0.15) 0px 5px 10px 0px;
 }
 
 .imagotipo {
@@ -59,7 +63,7 @@
     margin-right: 10px;
 }
 
-.profile-pic {
+.nav-profile-pic {
     max-width: 40px;
     max-height: 40px;
     border-radius: 50%;

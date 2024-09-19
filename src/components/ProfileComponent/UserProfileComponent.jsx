@@ -11,22 +11,22 @@ function UserProfileComponent({name, followers, following, joined, social, image
                     <i class="fas fa-circle"></i>
                     <img src={image} class="profile-pic"/>
                 </div>
-                <span>{social}</span>
+                <span><strong>{social}</strong></span>
             </div>
         </div>
         <div class="profile-data">
             <div class="following-data">
-                <span> {followers} followers </span>
-                <span> {following} following </span>
+                <span><strong className="number-profile-component">{followers}</strong> followers </span>
+                <span><strong className="number-profile-component">{following}</strong> following </span>
             </div>
             <div class="user-data">
-                <span class="name"> {name} </span>
-                <span>Joined {joined}</span>
+                <h2 class="name">{name}</h2>
+                <span>@john • joined {joined}</span>
             </div>
             <div class="user-social">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-twitter"></i>
+                <i class="bb-icon-rf bb-icon-brand-facebook"></i>
+                <i class="bb-icon-rf bb-icon-brand-youtube"></i>
+                <i class="bb-icon-rf bb-icon-brand-twitter"></i>
             </div>
         </div>
     </div>

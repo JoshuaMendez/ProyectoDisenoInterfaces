@@ -3,18 +3,22 @@
 .profile-container {
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: white;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.08); */
     border: 1px solid #f0f0f0;
 
 }
 
+.number-profile-component {
+    color: #393e41;
+}
+
 .profile-banner {
     width: 100%;
-    height: 150px;
+    height: 225px;
     object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    /* border-radius: 20px 20px 0 0; */
 }
 
 .profile-ctn {
@@ -23,7 +27,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px; 
-    margin-top: -70px;
+    margin-top: -130px;;
 }
 
 .profile-img-status {
@@ -44,17 +48,17 @@
     top: 2.5px;
 }
 
-.profile-pic {
-    width: 120px;
-    height: 120px;
+.profile-pic  {
+    width: 170px;
+    height: 170px;
     object-fit: cover;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 3px solid white;
 }
 
 .profile-ctn span {
     color: white;
-    background-color: purple;
+    background-color: #595899;
     font-size: 12px;
     padding: 5px 10px; 
     border-radius: 5px;
@@ -63,7 +67,11 @@
 }
 
 .profile-data {
-    padding: 30px 20px;
+    /* padding: 10px 30px; */
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -83,13 +91,14 @@
 
 .user-data span {
     font-size: 14px;
-    color: lightgray;
+    color: #939597;
 }
 
 .user-data .name {
-    font-weight: 600;
-    font-size: 22px;
-    color: black;
+    font-weight: 700;
+    font-size: 28.8px;
+    color: #393e41;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "helvetica neue", sans-serif;
 }
 
 .following-data, .user-social  {
@@ -99,20 +108,17 @@
 
 .following-data span{
     font-size: 12.5px;
-    color: lightgray;
+    color: #939597;
 }
 
 .user-social i {
-    font-size: 12px;
-    color: white;
-    background-color: gray;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 23px;
 }
+
+.user-social i:hover {
+    cursor: pointer;
+}
+
 
 .user-social  {
     justify-content: end;

@@ -7,7 +7,7 @@ import Blog from '../../components/blog/blog.jsx'
 import Share from '../../components/Share/Share.jsx'
 import Post from '../../components/Post/Post.jsx'
 import Feed from '../../components/Feed/Feed.jsx'
-import latestUpdates from '../../components/latest-updates/latestUpdates.jsx'
+import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
 import Following from '../../components/following/following.jsx'
 
 
@@ -18,8 +18,8 @@ function Home() {
         <Leftbar />
         <div className='columns'>
             <div className='column'>
-            <Blog />
-            <Following />
+                <Blog />
+                <Following />
             </div>
             <div className='column'>
             <div className='seccion'>
@@ -28,7 +28,7 @@ function Home() {
             <Feed />
             </div>
             <div className='column'>
-            <latestUpdates />
+                <LatestUpdates />
             </div>
         </div>
         </div>

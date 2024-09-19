@@ -13,16 +13,29 @@ const Navbar = () => {
                 <img src={imagotipo} className='imagotipo' alt="Logo" />
             </Link>
             <ul className='icon-list'>
-                <li><i className="bb-icon-l bb-icon-activity"></i></li>
-            
+                <li>
+                    <Link to="/timeline">
+                        <i className="bb-icon-l bb-icon-activity"></i>
+                    </Link>
+                </li>
+
                 <li>
                     <Link to="/profile">
                         <i className="bb-icon-l buddyboss bb-icon-user-avatar"></i>
                     </Link>
                 </li>
                 
-                <li><i className="bb-icon-l buddyboss bb-icon-user-friends-alt"></i></li>
-                <li><i className="bb-icon-l buddyboss bb-icon-comment-square-dots"></i></li>
+                <li>
+                    <Link to="/groups">
+                        <i className="bb-icon-l buddyboss bb-icon-user-friends-alt"></i>
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="/messages">
+                        <i className="bb-icon-l buddyboss bb-icon-comment-square-dots"></i>
+                    </Link>
+                </li>
             </ul>
             <ul className='profile-list'>
                 <li><i className ="bb-icon-l bb-icon-search"></i></li>
@@ -32,7 +45,7 @@ const Navbar = () => {
                 <li><p className='username'>John</p></li>
             </ul>
             <ul className='profile-nav'>
-                <li><img src={man} className='profile-pic' alt="Profile" /></li>
+                <li><img src={man} className='nav-profile-pic' alt="Profile" /></li>
             </ul>
         </div>
     );
