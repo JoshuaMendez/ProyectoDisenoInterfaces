@@ -2,6 +2,7 @@ import "./Post.css";
 import { Users } from "../../assets/dummyData/dummyData";
 import { useState } from "react";
 import React from 'react';
+import Comment from "./comment";
 
 export default function Post({ post }) {
     const [like, setLike] = useState(post.like || 0);
@@ -35,35 +36,37 @@ export default function Post({ post }) {
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <div className={isLiked? "bb-icon-l bb-icon-heart" : "bb-icon-f bb-icon-heart like-post-unClicked"}  onClick={likeHandler}></div>
+                        <div className={isLiked? "bb-icon-f bb-icon-heart like-post-unClicked" : "bb-icon-l bb-icon-heart"}  onClick={likeHandler}></div>
                         <span className="postLikeCounter">{like} people like it</span>
                     </div>
                     <div className="postBottomRight">
                         <span className="postCommentText">{post.commentsNumber || 0} comments</span>
                     </div>
                 </div>
-                <div className="postComments">
-                    {post.comment.map((comment, i) => (
-                        <span key = {i}>
-                        <div className="profile-comment"> 
-                            <div className="profile-picture-comment">
-                                <img
-                                className="postProfileImg"
-                                src={comment?.profilePicture || "default-profile.png"} // Imagen predeterminada si falta la imagen
-                                alt=""
-                                />
-                            </div>
-                            <div className="text-comment">
-                                <span className="postUsername">{comment?.profileUsername || "Unknown"}</span>
-                                <br/>
-                                {comment.comment}
-                            </div>
-                            <div className="relleno-comment"></div>
+                <Comment comments = {post.comment} ></Comment>
+                <div className="commentInputWrapper">
+                    <div className="input-comment">
+                        <div className="profile-picture-comment">
+                            <img
+                            className="postProfileImg"
+                            src={user?.profilePicture || 'default-profile.png'}
+                            alt=""
+                            />
                         </div>
-                        </span>
-                    ))}
+                        <div className="comment-container">
+                            <input
+                                type="text"
+                                className="commentInputField"
+                                placeholder="Add a comment..."
+                            />
+                            <div className={"bb-icon-f bb-icon-camera icon-comment"}></div>
+                            <div className={"bb-icon-f bb-icon-video  icon-comment"}></div>
+                            <div className={"bb-icon-f bb-icon-file-attach  icon-comment"}></div>
+                            <div className={"bb-icon-f bb-icon-gif  icon-comment"}></div>
+                        </div>
+                    </div>
 
-                </div>
+    </div>
             </div>
         </div>
     );

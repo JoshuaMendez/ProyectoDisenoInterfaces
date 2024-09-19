@@ -64,16 +64,22 @@ export const Posts = [
         {
         profilePicture :  Users[2].profilePicture,
         profileUsername : Users[2].username,
+        likes : 8,
+        date: "2 minutes ago",
         comment : "Dude what a chimba, invite"
         },
         {
         profilePicture : Users[4].profilePicture,
         profileUsername : Users[4].username,
+        likes : 3,
+        date: "Now",
         comment : "Wow i love Nature 🍃"    
         },
         {
         profilePicture : Users[4].profilePicture,
         profileUsername : Users[4].username,
+        likes : 2,
+        date: "1 minute ago",
         comment : "I've been there"    
         }
     ]   
@@ -87,20 +93,19 @@ export const Posts = [
     commentsNumber: 1,
     comment : [
         {
-        profilePicture :  Users[2].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
+        profilePicture :  Users[1].profilePicture,
+        profileUsername : Users[1].username,
+        likes : 13,
+        date: "10 minutes agp",
+        comment : "Sealing ah ⛵🌊? "
         },
         {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
+        profilePicture : Users[1].profilePicture,
+        profileUsername : Users[1].username,
+        likes : 8,
+        date: "3 days ago",
+        comment : "Man when are u comming back? 🤓 "    
         },
-        {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "I've been there"    
-        }
     ]   
 },
 {
@@ -115,17 +120,23 @@ export const Posts = [
         {
         profilePicture :  Users[2].profilePicture,
         profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
+        likes : 2,
+        date: "30 minutos ago",
+        comment : "where that ***** r u? "
         },
         {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
+        profilePicture : Users[5].profilePicture,
+        profileUsername : Users[5].username,
+        likes : 5,
+        date: "1 hour go",
+        comment : "Stars!!✨✨✨"    
         },
         {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "I've been there"    
+        profilePicture : Users[7].profilePicture,
+        profileUsername : Users[7].username,
+        likes : 21,
+        date: "3 days ago",
+        comment : "whatever u r taking i need some of that dose 💊"    
         }
     ]   
 },
@@ -138,19 +149,11 @@ export const Posts = [
     commentsNumber: 3,
     comment : [
         {
-        profilePicture :  Users[2].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
-        },
-        {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
-        },
-        {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "I've been there"    
+        profilePicture :  Users[6].profilePicture,
+        profileUsername : Users[6].username,
+        likes : 1,
+        date: "2 hours ago",
+        comment : "god dude, seems like u r freezing 🥶"
         }
     ]   
 },
@@ -165,75 +168,93 @@ export const Posts = [
         {
         profilePicture :  Users[2].profilePicture,
         profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
+        likes : 0,
+        date: "1 hour ago",
+        comment : "U THINK THATS PRETTY? 🥵🥵"
+        },
+        {
+        profilePicture : Users[9].profilePicture,
+        profileUsername : Users[9].username,
+        likes : 11,
+        date: "20 minutes ago",
+        comment : "how did u take that picture?"    
         },
         {
         profilePicture : Users[4].profilePicture,
         profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
-        },
-        {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
+        likes : 3,
+        date: "3 hours ago",
         comment : "I've been there"    
+        },
+        {
+        profilePicture : Users[4].profilePicture,
+        profileUsername : Users[2].username,
+        likes : 8,
+        date: "3 minutes ago",
+        comment : "crazy view!"    
         }
     ] 
 },
 {
     id: 6,
     photo: "/assets/images/post/6.jpg",
-    date: "1 day ago",
+    date: "2 day ago",
     userId: 6,
     like: 44,
     commentsNumber: 6,
     comment : [
         {
-        profilePicture :  Users[2].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
+        profilePicture :  Users[5].profilePicture,
+        profileUsername : Users[5].username,
+        likes : 13,
+        date: "1 day ago",
+        comment : "thats a road of threes🍁🍁"
         },
         {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
+        profilePicture : Users[8].profilePicture,
+        profileUsername : Users[8].username,
+        likes : 5,
+        date: "40 minutes ago",
+        comment : "Everest <3"    
         },
-        {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].profileUsername,
-        comment : "I've been there"    
-        }
     ] 
 },
 {
     id: 7,
     desc: "Never regret anything that made you smile.",
     photo: "/assets/images/post/7.jpg",
-    date: "2 days ago",
+    date: "3 days ago",
     userId: 7,
     like: 52,
     commentsNumber: 3,
     comment : [
         {
-        profilePicture :  Users[2].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
+        profilePicture :  Users[6].profilePicture,
+        profileUsername : Users[6].username,
+        likes : 43,
+        date: "2 days ago",
+        comment : "U make me smile darling 🥀"
         },
         {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
+        profilePicture : Users[7].profilePicture,
+        profileUsername : Users[7].username,
+        likes : 16,
+        date: "14 hours ago",
+        comment : "OH god that looks hot hot"    
         },
         {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "I've been there"    
+        profilePicture : Users[5].profilePicture,
+        profileUsername : Users[5].username,
+        likes : 1,
+        date: "2 minutes ago",
+        comment : "When will we met?"    
         }
     ] 
 },
 {
     id: 8,
     photo: "/assets/images/post/8.jpg",
-    date: "3 days ago",
+    date: "4 days ago",
     userId: 8,
     like: 15,
     commentsNumber: 1,
@@ -241,17 +262,23 @@ export const Posts = [
         {
         profilePicture :  Users[2].profilePicture,
         profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
+        likes : 5,
+        date: "3 days ago",
+        comment : "Oh my eyes 🌅"
         },
         {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
+        profilePicture : Users[0].profilePicture,
+        profileUsername : Users[0].username,
+        likes : 12,
+        date: "1 day ago",
+        comment : "perfect for a relaxing reading 📖"    
         },
         {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "I've been there"    
+        profilePicture : Users[8].profilePicture,
+        profileUsername : Users[8].username,
+        likes : 7,
+        date: "3 hours ago",
+        comment : "what a three 🌳"    
         }
     ] 
 },
@@ -267,17 +294,23 @@ export const Posts = [
         {
         profilePicture :  Users[2].profilePicture,
         profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
+        likes : 3,
+        date: "4 days ago",
+        comment : "Oh no is about to explote!"
         },
         {
         profilePicture : Users[4].profilePicture,
         profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
+        likes : 5,
+        date: "2 days ago",
+        comment : "aaah scary 🌋🌋"    
         },
         {
         profilePicture : Users[4].profilePicture,
         profileUsername : Users[2].username,
-        comment : "I've been there"    
+        likes : 8,
+        date: "20 hours ago",
+        comment : "were u flying? 🪽😎"    
         }
     ] 
 },
@@ -290,19 +323,25 @@ export const Posts = [
     commentsNumber: 12,
     comment : [
         {
-        profilePicture :  Users[2].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "Dude what a chimba, invite"
+        profilePicture :  Users[7].profilePicture,
+        profileUsername : Users[7].username,
+        likes : 25,
+        date: "3 days ago",
+        comment : "Didn´t know u were traveling"
+        },
+        {
+        profilePicture : Users[7].profilePicture,
+        profileUsername : Users[7].username,
+        likes : 2,
+        date: "3 days ago",
+        comment : "where r u?"    
         },
         {
         profilePicture : Users[4].profilePicture,
         profileUsername : Users[2].username,
-        comment : "Wow i love Nature 🍃"    
-        },
-        {
-        profilePicture : Users[4].profilePicture,
-        profileUsername : Users[2].username,
-        comment : "I've been there"    
+        likes : 35,
+        date: "1 days ago",
+        comment : "Finally a city man"    
         }
     ] 
 },
