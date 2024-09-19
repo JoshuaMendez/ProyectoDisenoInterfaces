@@ -2,6 +2,7 @@
 import React from 'react';
 import './Leftbar.css';
 import '../../assets/icons/css/bb-icons.css'; // Ensure this path is correct
+import { Link } from 'react-router-dom'; 
 
 const Leftbar = () => {
     const [isExpanded, setIsExpanded] = React.useState(false);
@@ -21,7 +22,11 @@ const Leftbar = () => {
                         <h4>PERSONAL</h4>
                         <li><i className="bb-icon-user"></i><span>My Profile</span></li>
                         <li><i className="bb-icon-activity"></i><span>My Timeline</span></li>
-                        <li><i className="bb-icon-inbox"></i><span>My Inbox</span></li>
+                        <li>
+                            <Link to="/messages">
+                                <i className="bb-icon-inbox"></i><span>My Inbox</span>
+                            </Link>
+                        </li>
                         <h4>COMMUNITY</h4>
                         <li><i className="bb-icon-users"></i><span>My Groups</span></li>
                         <li><i className="bb-icon-users"></i><span>My Connections</span></li>
@@ -43,7 +48,11 @@ const Leftbar = () => {
                         <ul className='icon-list-left'>
                         <li><i className="bb-icon-user"></i></li>
                         <li><i className="bb-icon-activity"></i></li>
-                        <li><i className="bb-icon-inbox"></i></li>
+                        <li>
+                            <Link to="/messages">
+                            <i className="bb-icon-inbox"></i>
+                            </Link>
+                        </li>
                         <li><div className='divider-horizontal'></div></li>
                         <li><i className="bb-icon-users"></i></li>
                         <li><i className="bb-icon-users"></i></li>

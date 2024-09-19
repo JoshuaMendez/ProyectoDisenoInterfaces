@@ -1,0 +1,14 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inbox-page {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fbfaf8; */
+}
+
+.content-inbox {
+    display: flex;
+    width: 100%;
+}
