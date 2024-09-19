@@ -1,0 +1,45 @@
+.bloque-mensaje{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-sizing: border-box; 
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+    }
+
+
+
+.bloque-mensaje img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#info-mensaje{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#info-mensaje h2 {
+    font-size: 14px;
+    color: #393E41;
+    margin: 0;
+    span{
+        font-size: 10px;
+        color: #c4c2c2;
+    }
+    
+}
+
+.contenido-mensaje{
+    font-size: 10px;
+    color: #393E41;
+}
+
+

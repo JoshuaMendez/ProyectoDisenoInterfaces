@@ -1,0 +1,180 @@
+.bloque-box {
+    background: rgb(252, 252, 252);
+    width: 70%;
+    height: 550px;
+    margin: 20px auto;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+#box-left {
+    width: 30%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px 0 0 10px;
+}
+
+#box-right {
+    width: 70%;
+    background: rgb(255, 255, 255);
+    border-radius: 0 10px 10px 0;
+    border-left: 1px solid lightgray;
+}
+
+#header-box {
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#header-box h2 {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+#header-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+#header-box ul li {
+    margin-right: 10px; 
+}
+
+#search-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 5%;
+}
+
+#search-box input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#list-chats{
+    background: rgb(255, 255, 255);
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* width */
+#list-chats::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+#list-chats::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+#list-chats::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+#list-chats::-webkit-scrollbar-thumb:hover {
+    background: #aeacac;
+}
+
+#header-chat{
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    height: 13%;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+#header-chat img{
+    width: 47px;
+    height: 47px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#nombre-chat{
+    width: 85%;
+    height: 35%;
+    display: flex;
+    background: rgb(255, 255, 255);
+    font-size: 12px;
+    color: #393E41;
+    cursor: pointer;
+
+}
+#icono-chat{
+    width: 5%;
+    height: 35%;
+    background: rgb(255, 255, 255);
+    font-size: 12px;
+    color: #393E41;
+    cursor: pointer;
+}
+#fecha {
+    font-size: 10px;
+    color: #c4c2c2;
+    text-align: center;
+}
+
+#teclado {
+    height: 15%;
+    margin-left: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    width: 94%;
+}
+#chat{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+}
+#teclado input{
+    width: 100%;
+    padding: 10px;
+    height: 65%;
+    border: none;
+}
+#icono-teclado{
+    width: 100%;
+    height: 35%;
+    background: rgb(251, 249, 249);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+#icono-teclado ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#icono-teclado ul li{
+    cursor: pointer;
+}
+#icono-teclado button{
+    background: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
