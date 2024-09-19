@@ -49,7 +49,7 @@
 }
 
 .like-post-unClicked{
-    color: red;
+    color: #dd2e44;
 
 }
 
@@ -71,8 +71,9 @@
 .profile-comment{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-bottom: 10px;
+    text-align: left;
 }
 
 .profile-picture-comment{

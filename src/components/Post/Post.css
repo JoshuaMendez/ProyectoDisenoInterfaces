@@ -4,14 +4,66 @@ border-radius: 10px;
 background-color: white;
 border: 1px solid lightgray;
 margin: 20px 0;
-padding-top: 15px;
-padding-left: 15px;
-padding-right: 15px;
+padding-top: 7px;
+padding-left: 10px;
+padding-right: 10px;
 padding-bottom: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .postWrapper {
 padding: 10px;
+}
+
+.post-divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d7d8d9;
+}
+
+.love-and-comment {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.post-love {
+  width: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.in-love-no-color {
+  font-weight: 400;
+  font-size: 15px;
+  color: #393e41;
+}
+
+.post-comment-inner {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.in-comment-inner {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.post-comment {
+  margin-top: 30px;
+}
+
+.postText {
+  color: #393e41;
 }
 
 .postTop {
@@ -32,14 +84,22 @@ border-radius: 50%;
 object-fit: cover;
 }
 
-.postUsername {
-font-size: 15px;
-font-weight: 500;
+.publisher-post {
+  font-size: 14px;
+}
+
+.postUsername-feed {
+font-size: 14px;
+color: #393e41;
+font-weight: 400;
 margin: 0 10px;
+display: flex;
+flex-direction: column;
 }
 
 .postDate{
-    font-size: 12px;
+    color: #d8d8d8;
+    font-size: 13px;
 }
 
 .postCenter{
@@ -47,6 +107,7 @@ margin: 0 10px;
 }
 
 .postImg{
+    border-radius: 10px;
     margin-top: 20px;
     width: 100%;
     max-height: 500px;
