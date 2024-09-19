@@ -5,6 +5,7 @@ import ProfilePage from './pages/profilepage/ProfilePage'; // Ejemplo de otra p�
 import Timeline from './pages/timeline/Timeline'; // Ejemplo de otra página
 import Courses from './pages/courses/Courses'; // Ejemplo de otra página
 import Inbox from './pages/inbox/inbox';
+import Groups from './pages/groups/groups';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/messages" element={<Inbox/>}/>
+        <Route path="/groups" element={<Groups/>}/>
         {/* Añade más rutas según sea necesario */}
         </Routes>
     );

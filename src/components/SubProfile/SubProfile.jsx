@@ -20,7 +20,7 @@ const SubProfile = () => {
                 </Link>
             </li>
             <li>
-                <Link to="/profile">
+                <Link to="/groups">
                     <i className="in-subprofile-list">Groups</i>
                 </Link>
             </li>
