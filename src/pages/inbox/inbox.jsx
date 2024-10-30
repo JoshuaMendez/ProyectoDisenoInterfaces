@@ -8,8 +8,6 @@ import Box from '../../components/Message/box.jsx';
 function Inbox() {
     return ( 
         <div className="inbox-page">
-            <Navbar />
-            <LeftBar />
             <div className="content-inbox">
                 <Box></Box>
             </div>

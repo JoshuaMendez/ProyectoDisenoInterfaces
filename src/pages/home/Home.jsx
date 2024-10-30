@@ -13,25 +13,20 @@ import Following from '../../components/following/following.jsx'
 
 function Home() {
     return (
-        <div className='container'>
-        <Navbar />
-        <Leftbar />
-        <div className='columns'>
-            <div className='column'>
-                <Blog />
-                <Following />
+
+            <div className='columns'>
+                <div className='column'>
+                    <Blog />
+                    <Following />
+                </div>
+                <div className='column'>
+                <div className='seccion'>
+                    <h1 className='activity-feed-title'>Activity Feed</h1>
+                </div>
+                <Feed />
+                </div>
+            
             </div>
-            <div className='column'>
-            <div className='seccion'>
-                <h1 className='activity-feed-title'>Activity Feed</h1>
-            </div>
-            <Feed />
-            </div>
-            <div className='column'>
-                <LatestUpdates />
-            </div>
-        </div>
-        </div>
     );
 }
 

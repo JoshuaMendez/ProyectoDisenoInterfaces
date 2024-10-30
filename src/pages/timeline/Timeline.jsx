@@ -1,11 +1,7 @@
 import React from 'react';
-// timeline copia de profilepage
 import '../timeline/timeline.css';
-import Navbar from '../../components/Navbar/Navbar';
-import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx'; // Asegúrate de que la ruta sea correcta
-import LeftBar from '../../components/Leftbar/Leftbar';
+import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx';
 import SubProfile from '../../components/SubProfile/SubProfile';
-import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
 import Feed from '../../components/Feed/Feed.jsx';
 import Following from '../../components/following/following.jsx';
 import Blog from '../../components/blog/blog.jsx';
@@ -13,8 +9,6 @@ import Blog from '../../components/blog/blog.jsx';
 function Timeline() {
     return (
         <div className="profile-page-timeline">
-            <Navbar />
-            <LeftBar />
             <div className="content-timeline">
                 <div className="left-column-profile-timeline">
                     {/* Contenido de la primera columna */}
@@ -50,9 +44,6 @@ function Timeline() {
                 </div>
                 <div className="spacer-column-profile-timeline">
                     {/* Columna vacía para separar las columnas */}
-                </div>
-                <div className="right-column-profile-timeline">
-                    <LatestUpdates />
                 </div>
             </div>
         </div>

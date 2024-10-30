@@ -10,8 +10,6 @@ import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx';
 function Document() {
     return (
         <div className="document-page">
-            <Navbar />
-            <LeftBar />
             <div className="content-document">
                 <div className="left-column-profile-document">
                     {/* Contenido de la primera columna */}

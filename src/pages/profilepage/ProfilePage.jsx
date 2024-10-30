@@ -1,9 +1,6 @@
 import React from 'react';
-// timeline copia de profilepage
 import './ProfilePage.css'
-import Navbar from '../../components/Navbar/Navbar';
-import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx'; // Asegúrate de que la ruta sea correcta
-import LeftBar from '../../components/Leftbar/Leftbar';
+import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx';
 import SubProfile from '../../components/SubProfile/SubProfile';
 import GeneralProfile from '../../components/GeneralProfile/GeneralProfile'
 import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
@@ -12,8 +9,6 @@ import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
 function ProfilePage() {
     return (
         <header className="profile-page">
-            <Navbar />
-            <LeftBar />
             <div className="content">
                 <div className="left-column-profile">
                     {/* Contenido de la primera columna */}
@@ -39,9 +34,6 @@ function ProfilePage() {
                 </div>
                 <div className="spacer-column-profile">
                     {/* Columna vacía para separar las columnas */}
-                </div>
-                <div className="right-column-profile">
-                    <LatestUpdates />
                 </div>
             </div>
         </header>

@@ -17,7 +17,7 @@ align-items: center;
 
 .columns {
 display: flex;
-justify-content: center;
+justify-content: left;
 width: 100%; /* Ajusta el ancho según sea necesario */
 max-width: 1200px; /* Ajusta el máximo ancho según sea necesario */
 margin-top: 45px; /* Espacio entre el Navbar y las columnas */

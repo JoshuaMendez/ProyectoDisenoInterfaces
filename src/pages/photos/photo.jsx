@@ -12,8 +12,6 @@ import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
 function Photo() {
     return (
         <div className="photo-page">
-            <Navbar />
-            <LeftBar />
             <div className="content-photo">
                 <div className="left-column-profile-photo">
                     {/* Contenido de la primera columna */}
@@ -39,9 +37,6 @@ function Photo() {
                 </div>
                 <div className="spacer-column-profile-photo">
                     {/* Columna vacía para separar las columnas */}
-                </div>
-                <div className="right-column-profile-photo">
-                    <LatestUpdates />
                 </div>
             </div>
         </div>
