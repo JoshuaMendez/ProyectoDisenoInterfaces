@@ -1,7 +1,7 @@
 import React from 'react';
 // timeline copia de profilepage
-import Navbar from '../../components/Navbar/Navbar';
-import LeftBar from '../../components/Leftbar/Leftbar';
+// import Navbar from '../../components/Navbar/Navbar';
+// import LeftBar from '../../components/Leftbar/Leftbar';
 import Box from '../../components/Message/box.jsx';
 
 

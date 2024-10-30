@@ -1,5 +1,4 @@
 import './ProfileComponent.css';
-import man from '../../assets/images/person/1.png';
 
 function UserProfileComponent({name, followers, following, joined, social, image, portada}) {
     return (

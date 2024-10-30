@@ -1,8 +1,8 @@
 import React from 'react';
 import './documents.css'
-import Navbar from '../../components/Navbar/Navbar';
+// import Navbar from '../../components/Navbar/Navbar';
 import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx';
-import LeftBar from '../../components/Leftbar/Leftbar';
+// import LeftBar from '../../components/Leftbar/Leftbar';
 import SubProfile from '../../components/SubProfile/SubProfile';
 import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx';
 

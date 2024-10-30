@@ -1,6 +1,6 @@
 import React from 'react';
 import Post from "../Post/Post";
-import Share from "../Share/Share";
+// import Share from "../Share/Share";
 import "./Feed.css";
 import { Posts } from "../../assets/dummyData/dummyData";
 
