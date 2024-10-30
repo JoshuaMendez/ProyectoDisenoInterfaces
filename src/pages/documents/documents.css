@@ -31,3 +31,79 @@ body {
     width: 2%;
     background-color: transparent;
 }
+
+.ctr-documents{
+    width: 900px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s all;
+    border : 1px solid #bababa;
+    overflow: hidden;
+}
+.ctr-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.search-document{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    padding: 5px 5px;
+    border: 1px solid #bababa;
+    border-radius: 5px;
+}
+.btn-search{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.header-document-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap : 10px;
+
+}
+.tabla-documents{
+    width: 900px;
+    padding : 20px;
+
+    th, td {
+        border-bottom: 1px solid #ddd;
+        padding: 15px;
+        text-align: left;
+
+    }
+    th {
+        color: rgb(156, 156, 156);
+        font-size: 16px;
+    }
+    td {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+    }
+    
+    table{
+        width: 100%;
+    }
+}
+.fecha-document{
+    color: rgb(156, 156, 156);
+    font-size: 16px;
+}
+.estado-document{
+    color: rgb(121, 119, 119);
+    font-size: 16px;
+}
