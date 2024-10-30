@@ -3,12 +3,12 @@ import '../../assets/icons/css/bb-icons.css';
 
 function Group({name, perfil, portada, tipo, foto1, foto2, foto3}) {
     return (
-    <div class="profile-container">
+    <div class="profile-container-group">
         <div class="profile-header">
-            <img src = {portada}  class="profile-banner"/>
+            <img src = {portada}  class="profile-banner-group"/>
             <div class="profile-ctn">
                 <div class="profile-img-status">
-                    <img src = {perfil} class="profile-pic"/>
+                    <img src = {perfil} class="profile-pic-group"/>
                 </div>
             </div>
             <div class="profile-data">
