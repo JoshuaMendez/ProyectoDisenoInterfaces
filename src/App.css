@@ -7,26 +7,26 @@
 .container {
     width: 100vw;
     min-height: 100vh;
-    background: #F9F9F9;
+    background: #F9F9F9;   
+}
+
+.sub-container{
+    width: 90%;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
 }
 
 .content {
-    width: 100%;
-    background: #F9F9F9;
+    width: 80%;
+    /*background: #F9F9F9;*/
+    padding-left: 40px;
     display: flex;
     flex-direction: row;
-    
+    background-color: aqua; 
+     
 }
+
 .right-column {
-    width: 28%;
-    padding-top: 50px;
-    padding-left: 600px;
-    position: absolute;
-    top: 200px; 
-    left: 540px; 
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    background-color: mediumorchid;
 }

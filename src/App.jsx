@@ -18,21 +18,24 @@ function App() {
         <div className='container'>
             <Navbar />
             <Leftbar />
-            <div className='content'></div>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/profile" element={<ProfilePage />} />
-                <Route path="/timeline" element={<Timeline />} />
-                <Route path="/courses" element={<Courses />} />
-                <Route path="/messages" element={<Inbox/>}/>
-                <Route path="/groups" element={<Groups/>}/>
-                <Route path="/courses" element={<Courses/>}/>
-                <Route path="/documents" element={<Document/>}/>
-                <Route path="/photos" element={<Photo/>}/>
-                {/* Añade más rutas según sea necesario */}
-            </Routes>
-            <div className="right-column">
-                <LatestUpdates />
+            <div className='sub-container'>
+                <div className='content'>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/profile" element={<ProfilePage />} />
+                        <Route path="/timeline" element={<Timeline />} />
+                        <Route path="/courses" element={<Courses />} />
+                        <Route path="/messages" element={<Inbox/>}/>
+                        <Route path="/groups" element={<Groups/>}/>
+                        <Route path="/courses" element={<Courses/>}/>
+                        <Route path="/documents" element={<Document/>}/>
+                        <Route path="/photos" element={<Photo/>}/>
+                        {/* Añade más rutas según sea necesario */}
+                    </Routes>
+                </div>
+                <div className="right-column">
+                    <LatestUpdates />
+                </div>
             </div>
         </div>
     );
