@@ -26,7 +26,7 @@
 
 #info-chat{
     display: flex;
-    justify-content: center;
+    text-align: left;
     flex-direction: column;
     gap: 2px;
 }

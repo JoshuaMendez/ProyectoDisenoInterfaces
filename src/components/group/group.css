@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.profile-container {
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(252, 252, 252);
+    /* box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.08); */
+    border: 1px solid #b4b4b4;
+
+}
+
+.number-profile-component {
+    color: #393e41;
+}
+
+.group-down-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(249, 255, 255);
+    width: 100%;
+    height: 10%;
+    padding: 0px 20px;
+}
+
+.group-participants i {
+    color: #393e41;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -8px;
+    background-color: #f5f5f5;
+}
+
+.botonDown {
+    background-color: #f4f4f4;
+    color: gray;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.botonDown:hover {
+    background-color: blue;
+    color: white;
+}
+
+.profile-banner {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    /* border-radius: 20px 20px 0 0; */
+}
+
+.profile-ctn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: -130px;
+}
+
+.profile-img-status {
+    position: relative;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.profile-pic-down{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgb(248, 248, 248);
+    margin-top: 0px;
+    margin-left: -8px;
+    display: flex;
+
+}
+
+.group-participants, .group-btn {
+    display: flex;
+    width: 50%;
+}
+
+.group-btn {
+    justify-content: end;
+}
+
+
+.btn-dp{
+    background-color: #393e41;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+
+.profile-pic  {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 3px solid white;
+    margin-top: 90px;
+    display: block;
+}
+
+.profile-data {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    flex-basis: 15%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.profile-data span {
+    font-size: 14px;
+    color: #939597;
+}
+.nameGroup {
+    font-weight: 700;
+    font-size: 20px;
+    color: #393e41;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "helvetica neue", sans-serif;
+}
+
+
+
+
+

@@ -22,7 +22,7 @@ export default function InboxIcon() {
         <div className="messages-dropdown">
           <ul>
             <Chat fecha="18 Sep 2024" descripcion="Jul: Te amo Joshua" nombre = "Juliana Sanchez" image="https://media.licdn.com/dms/image/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_200_200/0/1715274045600?e=2147483647&v=beta&t=6fvPqhD8LWK_kcsVnpNEvkyTyOLI-APzYCUKhC34MxA"></Chat>
-            <Chat fecha="19 Sep 2024" descripcion="Est: PA CUANDO 🥵" nombre = "Esteban Muñoz" image="https://media.licdn.com/dms/image/v2/D4E03AQFh6fyWMG_gZg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726766256011?e=1732147200&v=beta&t=h8YlrtLyq-fgg10VCWjrWmg_7_PlDbB9dgrx9_OSphY"></Chat>
+            <Chat fecha="19 Sep 2024" descripcion="Est: PA CUANDO 🥵" nombre = "Esteban Muñoz" image="https://akamai.sscdn.co/uploadfile/letras/fotos/a/7/f/b/a7fba5f1cd128cba1548e8a0aa5d6360.jpg"></Chat>
             <Chat fecha="18 Sep 2024" descripcion="Seb: Papasito Joshua 😈" nombre = "Emmanuel" image="https://media.licdn.com/dms/image/v2/D4E03AQGw9QkrArkzWg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726766539820?e=1732147200&v=beta&t=RYbabsNrO84Uivkog4eJWGEsT32zq7ih81x3uvglbzk"></Chat>
           
           </ul>
