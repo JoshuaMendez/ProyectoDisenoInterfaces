@@ -1,12 +1,12 @@
 import React from 'react';
 // timeline copia de profilepage
 import './photo.css'
-import Navbar from '../../components/Navbar/Navbar';
+// import Navbar from '../../components/Navbar/Navbar';
 import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx'; // Asegúrate de que la ruta sea correcta
-import LeftBar from '../../components/Leftbar/Leftbar';
+// import LeftBar from '../../components/Leftbar/Leftbar';
 import SubProfile from '../../components/SubProfile/SubProfile';
-import GeneralProfile from '../../components/GeneralProfile/GeneralProfile'
-import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
+// import GeneralProfile from '../../components/GeneralProfile/GeneralProfile'
+// import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
 
 
 function Photo() {

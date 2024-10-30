@@ -2,31 +2,31 @@ import React from 'react';
 import './following.css';
 import '../../assets/icons/css/bb-icons.css';
 import IconoFriend from './icono-friend/icono-friend.jsx';
-import bla from '../../assets/images/person/1.png'
+
 const amigos = [
     {
-        nombre: 'Isabella Pacheco',
-        imagen: 'https://media.licdn.com/dms/image/v2/D4E03AQGUnF-fto0ZeQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723948377144?e=2147483647&v=beta&t=_2n7ephi68j0SipR2Oqy1GC7MlSEjPhfzJjgW378FEQ'
+        nombre: 'Steven Spielberg',
+        imagen: 'https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww'
     },
     {
         nombre: 'Jane Smith',
-        imagen: bla
+        imagen: 'https://img.freepik.com/foto-gratis/apuesto-hombre-sonriente-confiado-manos-cruzadas-sobre-pecho_176420-18743.jpg?semt=ais_hybrid'
     },
     {
         nombre: 'Sam Wilson',
-        imagen: 'path/to/sam_image.jpg'
+        imagen: 'https://images.ecestaticos.com/vU8sC8tLdkx-2YYh1fkOGL8vfeY=/0x0:990x557/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F62c%2Fe5d%2F314%2F62ce5d3141c0b670144a692b7f6a21fa.jpg'
     }
 ];
+
 const Following = ({nAmigos}) => {
     return (
-        <div class = "bloque-following">
-            <h2 id = "titulo-following">I'm Following <span id = "numero-folowing">{nAmigos}</span></h2>
-            <div class = "amigos">
-            {amigos.slice(0, nAmigos).map((amigo, index) => (
-                <IconoFriend key={index} nombre={amigo.nombre} imagen={amigo.imagen} />
-            ))}
+        <div className="bloque-following">
+            <h2 id="titulo-following">I'm Following <span id="numero-folowing">{nAmigos}</span></h2>
+            <div className="amigos">
+                {amigos.slice(0, nAmigos).map((amigo, index) => (
+                    <IconoFriend key={index} nombre={amigo.nombre} imagen={amigo.imagen} />
+                ))}
             </div>
-
         </div>
     );
 }
