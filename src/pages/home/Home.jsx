@@ -20,10 +20,10 @@ function Home() {
                     <Following />
                 </div>
                 <div className='column'>
-                <div className='seccion'>
-                    <h1 className='activity-feed-title'>Activity Feed</h1>
-                </div>
-                <Feed />
+                    <div className='seccion'>
+                        <h1 className='activity-feed-title'>Activity Feed</h1>
+                    </div>
+                    <Feed />
                 </div>
             
             </div>

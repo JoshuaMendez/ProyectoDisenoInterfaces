@@ -33,12 +33,6 @@ function Document() {
                         Document..
                     </div>
                 </div>
-                <div className="spacer-column-profile-document">
-                    {/* Columna vacía para separar las columnas */}
-                </div>
-                <div className="right-column-profile-document">
-                    <LatestUpdates />
-                </div>
             </div>
         </div>
     );

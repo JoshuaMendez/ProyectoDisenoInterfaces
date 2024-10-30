@@ -5,7 +5,7 @@ body {
 .document-page {
     display: flex;
     flex-direction: column;
-    /* background-color: #fbfaf8; */
+    padding-left: 100px; 
 }
 
 .content-document {
