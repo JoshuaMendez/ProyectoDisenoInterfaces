@@ -8,9 +8,9 @@ import GeneralProfile from '../../components/GeneralProfile/GeneralProfile'
 
 function ProfilePage() {
     return (
-        <div className="content">
-            <div className='right-column-profile'>{}</div>
-            <div className="middle-column-profile">
+        <div className="profile-page">
+            <div className="content-profile">
+                <div className='left-column-profile'>{}</div>
                 <div className="profile-container">
                     <UserProfileComponent
                         name='John' 
