@@ -2,9 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import './SubProfile.css';
-import imagotipo from '../../assets/images/imagotipo.png';
 import '../../assets/icons/css/bb-icons.css';
-import man from '../../assets/images/person/1.png';
 
 const SubProfile = () => {
     return (
