@@ -8,7 +8,7 @@ import './chat.css';
 const Chat = ({nombre,image,descripcion,fecha}) => {
     return (
         <div className = "bloque-chat">
-            <img src={image} />
+            <img src={image} alt="" />
             <div id = "info-chat">
                 <h4>{nombre}</h4>
                 <span class="message-content">{descripcion}<span><br />•{fecha}</span></span>

@@ -9,7 +9,7 @@ const Curso = ({portada,titulo, cantidadLessons}) => {
     return (
         <div class = "bloque-curso">
             <div class = "portada-curso">
-                <img src ={portada}></img>
+                <img src ={portada} alt="" ></img>
             </div>
             <div class = "informacion-curso">
                 <div className="curso-detalles">

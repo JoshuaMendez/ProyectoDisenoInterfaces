@@ -4,11 +4,11 @@ function UserProfileComponent({name, followers, following, joined, social, image
     return (
     <div class="profile-container">
         <div class="profile-header">
-            <img src={portada} class="profile-banner"/>
+            <img src={portada} alt="" class="profile-banner"/>
             <div class="profile-ctn">
                 <div class="profile-img-status">
                     <i class="fas fa-circle"></i>
-                    <img src={image} class="profile-pic"/>
+                    <img src={image} alt="" class="profile-pic"/>
                 </div>
                 <span><strong>{social}</strong></span>
             </div>
