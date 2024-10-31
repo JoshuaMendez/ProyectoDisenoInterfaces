@@ -38,12 +38,12 @@ function Document() {
                                             <i class = "bb-icon-search"></i>
                                             <h4>Search Documents...</h4>
                                         </div>
-                                        <div class="btn-search"> 
+                                        <button class="btn-search"> 
                                             <h4><i class = "bb-icon-download bb-icon-l"></i>Upload Files</h4>
-                                        </div>
-                                        <div class="btn-search"> 
+                                        </button>
+                                        <button class="btn-search"> 
                                             <h4><i class = "bb-icon-folder-alt bb-icon-l"></i>Create Folder</h4>
-                                        </div> 
+                                        </button> 
                                     </div>
                                 </div>
                                 <div class="tabla-documents">

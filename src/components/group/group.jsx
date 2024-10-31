@@ -24,10 +24,10 @@ function Group({name, perfil, portada, tipo, foto1, foto2, foto3}) {
                 <i className="bb-icon-ellipsis-h"></i>
             </div>
             <div class="group-btn"> 
-                <div class = "botonDown">
+                <button class = "botonDown">
                     <i className="bb-icon-check"></i>
                     <h4>Organizer</h4>
-                </div>
+                </button>
             </div>
         </div>
     </div>
