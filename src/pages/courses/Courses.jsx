@@ -1,19 +1,11 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import './Courses.css'
-import Navbar from '../../components/Navbar/Navbar';
-import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx'; // Asegúrate de que la ruta sea correcta
-import LeftBar from '../../components/Leftbar/Leftbar';
-import SubProfile from '../../components/SubProfile/SubProfile';
-import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx';
 import Curso from '../../components/curso/curso.jsx'
 
 function Courses() {
     return (
         <div className="content-course">
-            <div className="left-column-profile-course">
-                {/* Contenido de la primera columna */}
-            </div>
+            <div className="left-column-profile-course">{}</div>
             <div className="middle-column-profile-course">
                 <div className="general-profile-container-course">
                     <div className="container-course">

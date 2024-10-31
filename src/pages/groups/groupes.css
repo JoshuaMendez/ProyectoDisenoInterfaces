@@ -2,16 +2,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.photo-page {
-    display: flex;
-    flex-direction: column;
-    padding-left: 60px;
-    /* background-color: #fbfaf8; */
-}
-
 .content-photo {
-    display: flex;
-    width: 100%;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .left-column-profile-photo {

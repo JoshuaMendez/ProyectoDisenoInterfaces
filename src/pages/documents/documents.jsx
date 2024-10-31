@@ -1,19 +1,11 @@
 import React from 'react';
 import './documents.css'
-// import Navbar from '../../components/Navbar/Navbar';
-import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx';
-// import LeftBar from '../../components/Leftbar/Leftbar';
-import SubProfile from '../../components/SubProfile/SubProfile';
-import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx';
 
 
 function Document() {
     return (
-        <div className="document-page">
             <div className="content-document">
-                <div className="left-column-profile-document">
-                    {/* Contenido de la primera columna */}
-                </div>
+                <div className="left-column-profile-document">{}</div>
                 <div className="middle-column-profile-document">
                     <div className="general-profile-container-document">
                         <div class = "ctr-documents">
@@ -65,7 +57,6 @@ function Document() {
                         </div>
                 </div>
             </div>
-        </div>
     );
 }
 

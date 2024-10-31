@@ -2,38 +2,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.content {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-}
-
 .content-profile {
     margin-left: 120px;
     margin-right: 120px;
 }
-
-.profile-page {
-    width: 100%;
-}
-
 .middle-column-profile {
     width: 100%;
     padding-bottom: 100px;
 }
 
-.right-column-profile {
-    width: 30%;
-    padding-top: 50px;
-    padding-right: 50px ;
-}
-
 .spacer-column-profile {
     width: 30%;
     background-color: transparent;
-}
-
-.menu-subprofile {
-    width: 100%;
 }
