@@ -5,6 +5,8 @@ import SubProfile from '../../components/SubProfile/SubProfile';
 import Feed from '../../components/Feed/Feed.jsx';
 import Following from '../../components/following/following.jsx';
 import Blog from '../../components/blog/blog.jsx';
+import img from '../../assets/images/person/1.png';
+import banner from '../../assets/images/post/background.jpg';
 
 function Timeline() {
     return (
