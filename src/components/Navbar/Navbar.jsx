@@ -8,15 +8,15 @@ import NotificationIcon from './notifications/notification';
 import InboxIcon from './inboxInteractive/inboxInteractive';
 import { useSelector } from 'react-redux';
 import { selectUser } from '../../store/userSlice';
-import { store } from '../../store/store';
 
 const Navbar = () => {
     const currentPage = useSelector((state) => state.page.currentPage);
     const user = useSelector(selectUser);
+    
     return (
         <nav className='navbar'>
-            <Link to ="/">
-                <img src={imagotipo} className='imagotipo' alt="Logo" />
+            <Link to="/">
+                <img src={imagotipo} className='imagotipo' alt="Company Logo" />
             </Link>
             <ul className='icon-list'>
                 <li>
@@ -27,37 +27,45 @@ const Navbar = () => {
 
                 <li>
                     <Link to="/profile">
-                        <i className={currentPage === '/profile' ? "bb-icon-f buddyboss bb-icon-user-avatar" : "bb-icon-l buddyboss bb-icon-user-avatar" }></i>
+                        <i className={currentPage === '/profile' ? "bb-icon-f buddyboss bb-icon-user-avatar" : "bb-icon-l buddyboss bb-icon-user-avatar"}></i>
                     </Link>
                 </li>
                 
                 <li>
                     <Link to="/courses">
-                        <i className={currentPage === '/courses' ? "bb-icon-f buddyboss bb-icon-user-friends-alt": "bb-icon-l buddyboss bb-icon-user-friends-alt"}></i>
+                        <i className={currentPage === '/courses' ? "bb-icon-f buddyboss bb-icon-user-friends-alt" : "bb-icon-l buddyboss bb-icon-user-friends-alt"}></i>
                     </Link>
                 </li>
 
                 <li>
                     <Link to="/messages">
-                        <i className={currentPage === '/messages' ? "bb-icon-f buddyboss bb-icon-comment-square-dots": "bb-icon-l buddyboss bb-icon-comment-square-dots"}></i>
+                        <i className={currentPage === '/messages' ? "bb-icon-f buddyboss bb-icon-comment-square-dots" : "bb-icon-l buddyboss bb-icon-comment-square-dots"}></i>
                     </Link>
                 </li>
             </ul>
             <ul className='profile-list'>
-                <li><i className ="bb-icon-f bb-icon-search"></i></li>
-                <li><div className='divider'></div></li>
-                <li><InboxIcon></InboxIcon></li>
-                <li><NotificationIcon></NotificationIcon></li>
                 <li>
-                    <Link to = "/profile">
-                    <p className='username'>{user.name || 'Guest'}</p>
+                    <i className="bb-icon-f bb-icon-search" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <div className='divider'></div>
+                </li>
+                <li>
+                    <InboxIcon />
+                </li>
+                <li>
+                    <NotificationIcon />
+                </li>
+                <li>
+                    <Link to="/profile">
+                        <p className='username'>{user.name || 'Guest'}</p>
                     </Link>
                 </li>
             </ul>
             <ul className='profile-nav'>
                 <li>
-                    <Link to = "/profile">
-                    <img src={user.image.img || null}  className='nav-profile-pic' alt="Profile" />
+                    <Link to="/profile">
+                        <img src={user.image.img || 'default-profile.png'} className='nav-profile-pic' alt={`Profile of ${user.name || 'Guest'}`} />
                     </Link>
                 </li>
             </ul>

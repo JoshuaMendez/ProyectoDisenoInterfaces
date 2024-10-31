@@ -1,24 +1,20 @@
-
 import React from 'react';
 import './curso.css';
 import '../../assets/icons/css/bb-icons.css';
 
-
-
-const Curso = ({portada,titulo, cantidadLessons}) => {
+const Curso = ({ portada, titulo, cantidadLessons }) => {
     return (
-        <div class = "bloque-curso">
-            <div class = "portada-curso">
-                <img src ={portada} alt="" ></img>
-            </div>
-            <div class = "informacion-curso">
-                <div className="curso-detalles">
+        <article className="bloque-curso">
+            <figure className="portada-curso">
+                <img src={portada} alt={`Portada de ${titulo}`} />
+            </figure>
+            <section className="informacion-curso">
+                <header className="curso-detalles">
                     <span className="curso-lecciones">{cantidadLessons} Lecciones</span>
                     <h2 className="curso-titulo">{titulo}</h2>
-                </div>
-            </div>
-            
-        </div>
+                </header>
+            </section>
+        </article>
     );
 }
 

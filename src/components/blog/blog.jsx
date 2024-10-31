@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './blog.css';
 import '../../assets/icons/css/bb-icons.css';
@@ -21,22 +20,24 @@ const blogPosts = [
         date: '2024-09-11'
     }
 ];
+
 const Blog = () => {
     return (
-        <div class = "bloque-blog">
-            <div class = "title-blog">
+        <section className="bloque-blog">
+            <header className="title-blog">
                 <h2>Blog</h2>
-            </div>
-            <div class = "post-blog">
+            </header>
+            <div className="post-blog">
                 {blogPosts.map((post, index) => (
-                    <ItemBlog key={index} image={post.image} alt=""  title={post.title} date={post.date} />
+                    <article key={index} className="blog-post">
+                        <ItemBlog image={post.image} alt="" title={post.title} date={post.date} />
+                    </article>
                 ))}
             </div>
-            <div class = "button-blog">
-                <button id = "boton-seeAll">See all</button>
-            </div>
-            
-        </div>
+            <footer className="button-blog">
+                <button id="boton-seeAll">See all</button>
+            </footer>
+        </section>
     );
 }
 
