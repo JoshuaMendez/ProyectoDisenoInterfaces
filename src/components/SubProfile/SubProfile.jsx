@@ -6,7 +6,7 @@ import '../../assets/icons/css/bb-icons.css';
 
 const SubProfile = () => {
     return (
-        <div className='menu-subprofile'>
+        <div className='menu-subprofile-component'>
             <li>
                 <Link to="/timeline">
                     <i className="in-subprofile-list">Timeline</i>

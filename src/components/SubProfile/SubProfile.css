@@ -1,7 +1,7 @@
 /* Navbar.css */
 @import url('../../assets/icons/css/bb-icons.css');
 
-.menu-subprofile {
+.menu-subprofile-component {
     width: 100%;
     display: flex;
     padding: 15px 7%;

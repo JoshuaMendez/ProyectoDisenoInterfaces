@@ -11,7 +11,7 @@ function Group({name, perfil, portada, tipo, foto1, foto2, foto3}) {
                     <img src = {perfil} class="profile-pic-group"/>
                 </div>
             </div>
-            <div class="profile-data">
+            <div class="profile-data-group">
             <h2 class="nameGroup">{name}</h2>
             <span>{tipo} • joined </span>
             </div>

@@ -9,6 +9,11 @@ body {
     justify-content: stretch;
 }
 
+.content-profile {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
 .profile-page {
     width: 100%;
 }
@@ -27,4 +32,8 @@ body {
 .spacer-column-profile {
     width: 30%;
     background-color: transparent;
+}
+
+.menu-subprofile {
+    width: 100%;
 }
