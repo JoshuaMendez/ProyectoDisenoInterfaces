@@ -1,16 +1,15 @@
 import "./GeneralProfile.css";
-// import { useState } from "react";
 import React from 'react';
 
 export default function Post({ post }) {
     return (
-        <div className="general-profile-container">
+        <section className="general-profile-container">
             <div className="general-profile-inner-section">
-                <div className="general-profile-first">
+                <header className="general-profile-first">
                     <h1>General Information</h1>
-                </div>
+                </header>
                 <div className="general-profile-divider">
-                    <div className='general-profile-divider-line'></div>
+                    <hr className="general-profile-divider-line" />
                 </div>
                 <div className="general-profile-information">
                     <div className="general-profile-atributes">
@@ -53,6 +52,6 @@ export default function Post({ post }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

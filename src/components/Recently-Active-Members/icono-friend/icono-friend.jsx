@@ -1,15 +1,19 @@
-
-import React from 'react';
+// import React from 'react';
+import PropTypes from 'prop-types';
 import './icono-friend.css';
 
-
-
-const iconoFriend = ({image}) => {
+const IconoFriend = ({ image, altText = "Imagen de perfil" }) => {
     return (
-        <div class = "img-perfil">
-            <img src= {image} alt="img-perfil"/>
+        <div className="img-perfil">
+            <img src={image} alt={altText} />
         </div>
     );
 }
 
-export default iconoFriend;
+// Validación de Props
+IconoFriend.propTypes = {
+    image: PropTypes.string.isRequired,
+    altText: PropTypes.string,
+};
+
+export default IconoFriend;

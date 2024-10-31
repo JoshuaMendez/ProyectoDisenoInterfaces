@@ -31,16 +31,22 @@ const amigos = [
     }
 ];
 
-const Following = ({nAmigos}) => {
+const Following = ({ nAmigos }) => {
     return (
-        <div className="bloque-following">
-            <h2 id="titulo-following">I'm Following <span id="numero-folowing">{nAmigos}</span></h2>
+        <section className="bloque-following">
+            <header>
+                <h2 id="titulo-following">
+                    I'm Following <span id="numero-folowing">{nAmigos}</span>
+                </h2>
+            </header>
             <div className="amigos">
                 {amigos.slice(0, nAmigos).map((amigo, index) => (
-                    <IconoFriend key={index} nombre={amigo.nombre} imagen={amigo.imagen} />
+                    <article key={index} className="amigo">
+                        <IconoFriend nombre={amigo.nombre} imagen={amigo.imagen} />
+                    </article>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

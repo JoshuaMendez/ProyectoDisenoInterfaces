@@ -6,13 +6,15 @@ import { Posts } from "../../assets/dummyData/dummyData";
 
 export default function Feed() {
     return (
-        <div className="feed">
+        <section className="feed">
             <div className="feedWrapper">
                 {/* <Share /> */}
                 {Posts.map((p) => (
-                    <Post key={p.id} post={p} />
+                    <article key={p.id} className="feedPost">
+                        <Post post={p} />
+                    </article>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }

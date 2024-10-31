@@ -1,4 +1,3 @@
-// Leftbar.jsx
 import React from 'react';
 import './Leftbar.css';
 import '../../assets/icons/css/bb-icons.css'; // Asegúrate de que esta ruta sea correcta
@@ -16,8 +15,8 @@ const Leftbar = () => {
         <nav>
             {isExpanded && (
                 <div className="barExpandida">
-                    <button id="header-desplegable">
-                        <i className="bb-icon-sidebar" id="desplegable" onClick={handleToggle}></i>
+                    <button id="header-desplegable" aria-expanded={isExpanded} onClick={handleToggle}>
+                        <i className="bb-icon-sidebar" id="desplegable"></i>
                     </button>
                     <div className='rellenoBarExpandida'>
                         <ul className='icon-list-left'>
@@ -72,8 +71,8 @@ const Leftbar = () => {
             )}
             {!isExpanded && (
                 <div className='leftbar'>
-                    <button id="header-desplegable">
-                        <i className="bb-icon-sidebar" id="desplegable" onClick={handleToggle}></i>
+                    <button id="header-desplegable" aria-expanded={isExpanded} onClick={handleToggle}>
+                        <i className="bb-icon-sidebar" id="desplegable"></i>
                     </button>
                     <ul className='icon-list-left'>
                         <li className={currentPage === '/profile' ? "filled" : "clear"}>
