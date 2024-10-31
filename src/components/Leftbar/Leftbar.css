@@ -2,13 +2,17 @@
 @import url('../../assets/icons/css/bb-icons.css');
 
 .filled {
-    background-color: #4caf50; /* Color de fondo cuando está seleccionado */
-    color: white; /* Color del texto */
+    background-color: #6a5acd; /* Fondo morado cuando está seleccionado */
+    color: white; /* Texto e ícono en blanco cuando está seleccionado */
+    border-radius: 10px; /* Suavizar esquinas */
+    padding: 10px; /* Espacio alrededor del ícono y texto */
 }
 
 .clear {
-    background-color: transparent; /* Color de fondo cuando no está seleccionado */
-    color: black; /* Color del texto */
+    background-color: transparent; /* Fondo transparente cuando no está seleccionado */
+    color: black; /* Texto e ícono en negro cuando no está seleccionado */
+    border-radius: 10px; /* Suavizar esquinas */
+    padding: 10px;
 }
 
 .leftbar {
@@ -24,30 +28,46 @@
 }
 
 .icon-list-left {
-    top: 10 px;
+    top: 10px;
     list-style: none;
     height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+}
+
+/* Estilo de íconos y texto en negro cuando no están seleccionados */
+.icon-list-left li.clear i,
+.icon-list-left li.clear span {
+    color: black;
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilo de íconos y texto en blanco cuando están seleccionados */
+.icon-list-left li.filled i,
+.icon-list-left li.filled span {
+    color: white;
+}
+
+/* Aplica a todos los links para eliminar el subrayado */
+.icon-list-left li a {
+    text-decoration: none;
 }
 
 .icon-list-left li {
     display: inline-block;
     margin: 10px 25px;
     font-size: 20px;
-    color: black;
     cursor: pointer;
 }
-#header-desplegable{
+
+#header-desplegable {
     display: inline-block;
     font-size: 20px;
     color: black;
     cursor: pointer;
     margin: 10px 20px;
-
 }
 
 .divider-horizontal {
@@ -55,17 +75,19 @@
     height: 1px;
     background-color: #d7d8d9;
 }
-.barExpandida{
-    width: 200px;
+
+.barExpandida {
+    width: 18%;
     transition: 0.5s;
     height: 100%;
-    background : white;
+    background: white;
     position: fixed;
     top: 0;
     z-index: 1001;
 }
-.rellenoBarExpandida{
-    top: 10 px;
+
+.rellenoBarExpandida {
+    top: 10px;
     list-style: none;
     height: 90%;
     display: flex;
@@ -73,13 +95,8 @@
     align-items: justify;
     justify-content: space-between;
 }
-/* span{
+
+h4 {
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
     font-size: 12px;
-    
-} */
-h4{
-    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
-    font-size: 12px;
-    position: relative;
 }

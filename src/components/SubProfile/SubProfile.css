@@ -10,17 +10,33 @@
     margin: 0;
 }
 
+/* Estilo general de los elementos en la barra */
 .in-subprofile-list {
     font-size: 14px;
     font-style: normal;
-}
-
-.menu-subprofile li:not(:last-child) {
-    margin-right: 50px;
-}
-
-.menu-subprofile a {
-    text-decoration: none;
-    color: inherit;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration:none /* Evita subrayado en los links */
+}
+
+/* Estilo cuando está seleccionado */
+.in-subprofile-list-strong {
+    font-weight: bold; /* Texto en negrita cuando está seleccionado */
+    color: black;
+    position: relative;
+}
+
+.in-subprofile-list-strong::before {
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: black; 
+}
+
+/* Espaciado entre elementos */
+.menu-subprofile-component li:not(:last-child) {
+    margin-right: 50px;
 }
