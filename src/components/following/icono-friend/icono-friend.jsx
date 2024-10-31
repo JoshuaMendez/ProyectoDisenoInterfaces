@@ -1,15 +1,12 @@
-
 import React from 'react';
 import './icono-friend.css';
 
-
-
-const iconoFriend = ({image}) => {
+const IconoFriend = ({ imagen }) => {
     return (
-        <div class = "img-perfil">
-            <img src={image} alt="img-perfil"/>
+        <div className="img-perfil">
+            <img src={imagen} alt="img-perfil" />
         </div>
     );
 }
 
-export default iconoFriend;
+export default IconoFriend;
