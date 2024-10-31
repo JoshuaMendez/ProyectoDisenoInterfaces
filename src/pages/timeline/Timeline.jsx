@@ -6,23 +6,23 @@ import Blog from '../../components/blog/blog.jsx';
 
 function Timeline() {
     return (
-            <div className="content-timeline">
-                <div className="left-column-profile-timeline">{}</div>
-                <div className="middle-column-profile-timeline">
-                    <div className='firts-middle-column-timeline'>
-                        <Following></Following>
-                        <br></br>
-                        <Blog></Blog>
-                    </div>
-                    <div className="spacer-column-profile-timeline">
-                            {/* Columna vacía para separar las columnas */}
-                    </div>
-                    <div className='Feed-timeline'>
-                        <Feed></Feed>
-                    </div>
+        <main className="content-timeline">
+            <aside className="left-column-profile-timeline"></aside>
+            <section className="middle-column-profile-timeline">
+                <div className='firts-middle-column-timeline'>
+                    <Following />
+                    <br />
+                    <Blog />
                 </div>
-                <div className="spacer-column-profile-timeline">{}</div>
-            </div>
+                <div className="spacer-column-profile-timeline">
+                    {/* Columna vacía para separar las columnas */}
+                </div>
+                <div className='Feed-timeline'>
+                    <Feed />
+                </div>
+            </section>
+            <aside className="spacer-column-profile-timeline"></aside>
+        </main>
     );
 }
 

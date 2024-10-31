@@ -2,16 +2,15 @@ import React from 'react';
 import './ProfilePage.css';
 import GeneralProfile from '../../components/GeneralProfile/GeneralProfile';
 
-
 function ProfilePage() {
     return (
-        <div className="content-profile">
-            <div className="left-column-profile">{}</div>
-            <div className="middle-column-profile">
+        <main className="content-profile">
+            <aside className="left-column-profile"></aside>
+            <section className="middle-column-profile">
                 <GeneralProfile />
-            </div>
-            <div className="spacer-column-profile">{}</div>
-        </div>
+            </section>
+            <aside className="spacer-column-profile"></aside>
+        </main>
     );
 }
 

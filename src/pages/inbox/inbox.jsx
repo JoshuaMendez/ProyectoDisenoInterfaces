@@ -4,14 +4,13 @@ import React from 'react';
 // import LeftBar from '../../components/Leftbar/Leftbar';
 import Box from '../../components/Message/box.jsx';
 
-
 function Inbox() {
     return ( 
-        <div className="inbox-page">
-            <div className="content-inbox">
-                <Box></Box>
-            </div>
-        </div>
+        <main className="inbox-page">
+            <section className="content-inbox">
+                <Box />
+            </section>
+        </main>
     );
 }
 
