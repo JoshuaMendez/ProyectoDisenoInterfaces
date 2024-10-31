@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCurrentPage } from './store/pageSlice';
+import { selectUser } from './store/userSlice'; // Importa el selector de usuario
 
 import Home from './pages/home/Home';
 import ProfilePage from './pages/profilepage/ProfilePage';
@@ -20,16 +21,13 @@ import Leftbar from './components/Leftbar/Leftbar';
 import LatestUpdates from './components/LatestUpdates/latestUpdates';
 import './App.css';
 
-import img from './assets/images/person/1.png';
-import banner from './assets/images/post/background.jpg';
-
 function App() {
     const location = useLocation();
     const dispatch = useDispatch();
     const currentPage = useSelector((state) => state.page.currentPage);
+    const user = useSelector(selectUser); // Extrae los datos de usuario
 
     useEffect(() => {
-        // Actualiza la página actual en el store de Redux cada vez que cambia la ubicación
         dispatch(setCurrentPage(location.pathname));
     }, [location, dispatch]);
     
@@ -38,24 +36,24 @@ function App() {
     return (
         <div className='main-container'>
             <div className='left-column'>
-                <div className='navbar'><Navbar/></div>
-                <Leftbar/>
-                { profilePages.includes(currentPage) &&
-                <div className="content-profile">
-                    <UserProfileComponent
-                        name="John"
-                        followers="15"
-                        following="3"
-                        joined="last week"
-                        social="Admin"
-                        image={img}
-                        portada={banner}
-                    />
-                    <div className="menu-subprofile">
-                        <SubProfile />
+                <div className='navbar'><Navbar /></div>
+                <Leftbar />
+                {profilePages.includes(currentPage) && user && (
+                    <div className="content-profile">
+                        <UserProfileComponent
+                            name={user.name || 'Guest'} 
+                            followers={user.followers || '0'} 
+                            following={user.following || '0'} 
+                            joined={user.joined || 'N/A'} 
+                            social={user.social || 'User'} 
+                            image={user.image.img || null} 
+                            portada={user.portada.banner || null} 
+                        />
+                        <div className="menu-subprofile">
+                            <SubProfile />
+                        </div>
                     </div>
-                </div>
-                }
+                )}
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/profile" element={<ProfilePage />} />
@@ -65,11 +63,9 @@ function App() {
                     <Route path="/groups" element={<Groups />} />
                     <Route path="/documents" element={<Document />} />
                     <Route path="/photos" element={<Photo />} />
-                    {/* Añade más rutas según sea necesario */}
                 </Routes>
             </div>
             <div className="right-column">
-                {/* Condicionalmente renderiza LatestUpdates solo si no estamos en /messages */}
                 {currentPage !== '/messages' && <LatestUpdates />}
             </div>
         </div>

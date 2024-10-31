@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import imagotipo from '../../assets/images/imagotipo.png';
 import '../../assets/icons/css/bb-icons.css';
-import man from '../../assets/images/person/1.png';
 import NotificationIcon from './notifications/notification';
 import InboxIcon from './inboxInteractive/inboxInteractive';
 import { useSelector } from 'react-redux';
+import { selectUser } from '../../store/userSlice';
+import { store } from '../../store/store';
 
 const Navbar = () => {
     const currentPage = useSelector((state) => state.page.currentPage);
+    const user = useSelector(selectUser);
     return (
         <nav className='navbar'>
             <Link to ="/">
@@ -48,14 +50,14 @@ const Navbar = () => {
                 <li><NotificationIcon></NotificationIcon></li>
                 <li>
                     <Link to = "/profile">
-                    <p className='username'>John</p>
+                    <p className='username'>{user.name || 'Guest'}</p>
                     </Link>
                 </li>
             </ul>
             <ul className='profile-nav'>
                 <li>
                     <Link to = "/profile">
-                    <img src={man} className='nav-profile-pic' alt="Profile" />
+                    <img src={user.image.img || null}  className='nav-profile-pic' alt="Profile" />
                     </Link>
                 </li>
             </ul>
