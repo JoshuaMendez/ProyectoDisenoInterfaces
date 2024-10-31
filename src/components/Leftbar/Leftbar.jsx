@@ -3,65 +3,66 @@ import React from 'react';
 import './Leftbar.css';
 import '../../assets/icons/css/bb-icons.css'; // Ensure this path is correct
 import { Link } from 'react-router-dom'; 
+import { useSelector } from 'react-redux';
 
 const Leftbar = () => {
+    const currentPage = useSelector((state) => state.page.currentPage);
     const [isExpanded, setIsExpanded] = React.useState(false);
-
     const handleToggle = () => {
         setIsExpanded(!isExpanded);
     };
     return (
-        <div>
-                {isExpanded && (
-                    <div className = "barExpandida">
-                        <div id = "header-desplegable">
-                            <i className="bb-icon-sidebar" id="desplegable" onClick={handleToggle}></i>
-                        </div>
-                        <div className='rellenoBarExpandida'>
+        <nav>
+            {isExpanded && (
+                <div className = "barExpandida">
+                    <div id = "header-desplegable">
+                        <i className="bb-icon-sidebar" id="desplegable" onClick={handleToggle}></i>
+                    </div>
+                    <div className='rellenoBarExpandida'>
                         <ul className='icon-list-left'>
                         <h4>PERSONAL</h4>
-                        <li>
+                        <li className={currentPage === '/profile' ? "filled": "clear"}>
                             <Link to="/profile">
-                                <i className="bb-icon-user"></i><span>My Profile</span>
+                                <i className={currentPage === '/profile' ? "bb-icon-user-filled" :"bb-icon-user"}></i><span>My Profile</span>
                             </Link>
                         </li>
-                        <li>
+                        <li className={currentPage === '/timeline' ? "filled": "clear"}>
                             <Link to="/timeline">
                                 <i className="bb-icon-activity"></i><span>My Timeline</span>
                             </Link>
                         </li>
                         
                         <h4>COMMUNITY</h4>
-                        <li>
+                        <li className={currentPage === '/groups' ? "filled": "clear"}>
                             <Link to="/groups">
                             <i className="bb-icon-users"></i><span>My Groups</span>
                             </Link>
                         </li>
-                        <li>
+                        <li className={currentPage === '/messages' ? "filled": "clear"}>
                             <Link to="/messages">
                             <i className="bb-icon-comments-square"></i><span>My Discussions</span>
                             </Link>
                         </li>     
-                        <li>
+                        <li className={currentPage === '/courses' ? "filled": "clear"}>
                             <Link to="/courses">
                                 <i className="bb-icon-graduation-cap"></i><span>My Courses</span>
                             </Link>
                         </li>
                         <h4>MEDIA</h4> 
-                        <li>
+                        <li className={currentPage === '/photo' ? "filled": "clear"}>
                             <Link to="/photo">
                                 <i className="bb-icon-image"></i><span>My Photos</span>
                             </Link>
                         </li>
-                        <li>
+                        <li className={currentPage === '/documents' ? "filled": "clear"}>
                             <Link to="/documents">
                                 <i className="bb-icon-folder-alt"></i><span>My Documents</span>
                             </Link>
                         </li>      
                         </ul>
-                        </div>
                     </div>
-                )}
+                </div>
+            )}
                     {!isExpanded && (
                     <div className='leftbar'>
                         <div id = "header-desplegable">
@@ -109,7 +110,7 @@ const Leftbar = () => {
                     </div>
                 )}         
             
-        </div>
+        </nav>
     );
 }
 

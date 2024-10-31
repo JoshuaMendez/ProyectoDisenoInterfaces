@@ -7,8 +7,10 @@ import '../../assets/icons/css/bb-icons.css';
 import man from '../../assets/images/person/1.png';
 import NotificationIcon from './notifications/notification';
 import InboxIcon from './inboxInteractive/inboxInteractive';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+    const currentPage = useSelector((state) => state.page.currentPage);
     return (
         <nav className='navbar'>
             <Link to ="/">
@@ -17,25 +19,25 @@ const Navbar = () => {
             <ul className='icon-list'>
                 <li>
                     <Link to="/timeline">
-                        <i className="bb-icon-l bb-icon-activity"></i>
+                        <i className={currentPage === '/timeline' ? 'bb-icon-f bb-icon-activity active' : 'bb-icon-l bb-icon-activity'}></i>                    
                     </Link>
                 </li>
 
                 <li>
                     <Link to="/profile">
-                        <i className="bb-icon-l buddyboss bb-icon-user-avatar"></i>
+                        <i className={currentPage === '/profile' ? "bb-icon-f buddyboss bb-icon-user-avatar" : "bb-icon-l buddyboss bb-icon-user-avatar" }></i>
                     </Link>
                 </li>
                 
                 <li>
                     <Link to="/courses">
-                        <i className="bb-icon-l buddyboss bb-icon-user-friends-alt"></i>
+                        <i className={currentPage === '/courses' ? "bb-icon-f buddyboss bb-icon-user-friends-alt": "bb-icon-l buddyboss bb-icon-user-friends-alt"}></i>
                     </Link>
                 </li>
 
                 <li>
                     <Link to="/messages">
-                        <i className="bb-icon-l buddyboss bb-icon-comment-square-dots"></i>
+                        <i className={currentPage === '/messages' ? "bb-icon-f buddyboss bb-icon-comment-square-dots": "bb-icon-l buddyboss bb-icon-comment-square-dots"}></i>
                     </Link>
                 </li>
             </ul>
