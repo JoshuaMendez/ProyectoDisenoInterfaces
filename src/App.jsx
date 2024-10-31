@@ -13,6 +13,7 @@ import Groups from './pages/groups/groups';
 import Document from './pages/documents/documents';
 import Photo from './pages/photos/photo';
 import UserProfileComponent from './components/ProfileComponent/UserProfileComponent';
+import SubProfile from './components/SubProfile/SubProfile';
 
 import Navbar from './components/Navbar/Navbar';
 import Leftbar from './components/Leftbar/Leftbar';
@@ -41,7 +42,7 @@ function App() {
                 <div className='navbar'><Navbar /></div>
                 <Leftbar />
                 { profilePages.includes(currentPage) &&
-                <div className="profile-container">
+                <div className="content-profile">
                     <UserProfileComponent
                         name="John"
                         followers="15"
@@ -51,6 +52,9 @@ function App() {
                         image={img}
                         portada={banner}
                     />
+                    <div className="menu-subprofile">
+                        <SubProfile />
+                    </div>
                 </div>
                 }
                 <Routes>

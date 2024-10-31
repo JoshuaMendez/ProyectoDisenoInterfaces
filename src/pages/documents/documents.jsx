@@ -15,9 +15,6 @@ function Document() {
                     {/* Contenido de la primera columna */}
                 </div>
                 <div className="middle-column-profile-document">
-                    <div className="menu-subprofile-document">
-                        <SubProfile />
-                    </div>
                     <div className="general-profile-container-document">
                         <div class = "ctr-documents">
                                 <div class ="ctr-head">

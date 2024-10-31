@@ -5,6 +5,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.content-profile {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.menu-subprofile {
+    width: 100%;
+}
+
 .main-container {
     max-width: 100%;
     min-height: 100vh;

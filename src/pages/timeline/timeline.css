@@ -19,8 +19,10 @@ body {
 }
 
 .middle-column-profile-timeline {
-    width: 70%;
+    width: 100%;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
 }
 
 .right-column-profile-timeline {
@@ -40,7 +42,7 @@ body {
 }
 
 .firts-middle-column-timeline{
-    width: 36%;
+    width: 28%;
 }
 
 .Feed-timeline{

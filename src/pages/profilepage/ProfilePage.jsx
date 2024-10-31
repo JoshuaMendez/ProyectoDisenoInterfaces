@@ -11,9 +11,6 @@ function ProfilePage() {
     return (
         <div className="content-profile">
             <div className="left-column-profile">{}</div>
-            <div className="menu-subprofile">
-                <SubProfile />
-            </div>
             <div className="middle-column-profile">
                 <GeneralProfile />
             </div>

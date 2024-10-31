@@ -15,9 +15,6 @@ function Courses() {
                 {/* Contenido de la primera columna */}
             </div>
             <div className="middle-column-profile-course">
-                <div className="menu-subprofile-course">
-                    <SubProfile />
-                </div>
                 <div className="general-profile-container-course">
                     <div className="container-course">
                         <Curso portada="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" titulo="HALO 1 PARA PENDEJOS" cantidadLessons={10}/>

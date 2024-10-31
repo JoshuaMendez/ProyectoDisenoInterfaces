@@ -17,9 +17,6 @@ function Photo() {
                     {/* Contenido de la primera columna */}
                 </div>
                 <div className="middle-column-profile-photo">
-                    <div className="menu-subprofile-photo">
-                        <SubProfile />
-                    </div>
                     <div className="general-profile-container-photo">
                         <div class = "ctr-photos">
                             <div class ="ctr-head">
