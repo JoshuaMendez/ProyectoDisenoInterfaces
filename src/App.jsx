@@ -22,7 +22,6 @@ import './App.css';
 
 import img from './assets/images/person/1.png';
 import banner from './assets/images/post/background.jpg';
-import { current } from '@reduxjs/toolkit';
 
 function App() {
     const location = useLocation();
@@ -39,8 +38,8 @@ function App() {
     return (
         <div className='main-container'>
             <div className='left-column'>
-                <div className='navbar'><Navbar /></div>
-                <Leftbar />
+                <div className='navbar'><Navbar/></div>
+                <Leftbar/>
                 { profilePages.includes(currentPage) &&
                 <div className="content-profile">
                     <UserProfileComponent

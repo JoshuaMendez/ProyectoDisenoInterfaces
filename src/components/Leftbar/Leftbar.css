@@ -1,6 +1,16 @@
 /* Leftbar */
 @import url('../../assets/icons/css/bb-icons.css');
 
+.filled {
+    background-color: #4caf50; /* Color de fondo cuando está seleccionado */
+    color: white; /* Color del texto */
+}
+
+.clear {
+    background-color: transparent; /* Color de fondo cuando no está seleccionado */
+    color: black; /* Color del texto */
+}
+
 .leftbar {
     height: 100%;
     width: 70px;
