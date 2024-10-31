@@ -1,7 +1,6 @@
-
 .bloque-updates{
     width: 250px;
-    height: auto; 
+    /* height: auto;  */
     padding: 20px;
     background: white;
     position: sticky;
@@ -9,4 +8,8 @@
     left: 15%;
     border-radius: 10px;
     border: 1px solid lightgray;
+}
+
+.h2-title-latest {
+    margin-bottom: 20px;
 }
