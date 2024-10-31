@@ -29,7 +29,7 @@
 .in-subprofile-list-strong::before {
     content: '';
     position: absolute;
-    bottom: -35px;
+    bottom: -15px;
     left: 0;
     right: 0;
     height: 2px;

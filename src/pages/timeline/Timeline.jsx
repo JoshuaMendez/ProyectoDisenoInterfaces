@@ -1,7 +1,5 @@
 import React from 'react';
 import '../timeline/timeline.css';
-import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx';
-import SubProfile from '../../components/SubProfile/SubProfile';
 import Feed from '../../components/Feed/Feed.jsx';
 import Following from '../../components/following/following.jsx';
 import Blog from '../../components/blog/blog.jsx';
