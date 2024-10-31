@@ -12,11 +12,16 @@ import Inbox from './pages/inbox/inbox';
 import Groups from './pages/groups/groups';
 import Document from './pages/documents/documents';
 import Photo from './pages/photos/photo';
+import UserProfileComponent from './components/ProfileComponent/UserProfileComponent';
 
 import Navbar from './components/Navbar/Navbar';
 import Leftbar from './components/Leftbar/Leftbar';
 import LatestUpdates from './components/LatestUpdates/latestUpdates';
 import './App.css';
+
+import img from './assets/images/person/1.png';
+import banner from './assets/images/post/background.jpg';
+import { current } from '@reduxjs/toolkit';
 
 function App() {
     const location = useLocation();
@@ -27,12 +32,27 @@ function App() {
         // Actualiza la página actual en el store de Redux cada vez que cambia la ubicación
         dispatch(setCurrentPage(location.pathname));
     }, [location, dispatch]);
+    
+    const profilePages = ['/profile', '/timeline', '/groups', '/courses', '/documents', '/photos'];
 
     return (
         <div className='main-container'>
             <div className='left-column'>
                 <div className='navbar'><Navbar /></div>
                 <Leftbar />
+                { profilePages.includes(currentPage) &&
+                <div className="profile-container">
+                    <UserProfileComponent
+                        name="John"
+                        followers="15"
+                        following="3"
+                        joined="last week"
+                        social="Admin"
+                        image={img}
+                        portada={banner}
+                    />
+                </div>
+                }
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/profile" element={<ProfilePage />} />

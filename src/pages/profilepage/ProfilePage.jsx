@@ -11,17 +11,6 @@ function ProfilePage() {
     return (
         <div className="content-profile">
             <div className="left-column-profile">{}</div>
-            <div className="profile-container">
-                <UserProfileComponent
-                    name="John"
-                    followers="15"
-                    following="3"
-                    joined="last week"
-                    social="Admin"
-                    image={img}
-                    portada={banner}
-                />
-            </div>
             <div className="menu-subprofile">
                 <SubProfile />
             </div>

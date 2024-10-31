@@ -5,8 +5,6 @@ import SubProfile from '../../components/SubProfile/SubProfile';
 import Feed from '../../components/Feed/Feed.jsx';
 import Following from '../../components/following/following.jsx';
 import Blog from '../../components/blog/blog.jsx';
-import img from '../../assets/images/person/1.png';
-import banner from '../../assets/images/post/background.jpg';
 
 function Timeline() {
     return (
@@ -16,17 +14,6 @@ function Timeline() {
                     {/* Contenido de la primera columna */}
                 </div>
                 <div className="middle-column-profile-timeline">
-                    <div className="profile-container-timeline">
-                        <UserProfileComponent
-                            name='John' 
-                            followers='15' 
-                            following='3' 
-                            joined='last week' 
-                            social='Admin' 
-                            image='https://online-communities.demos.buddyboss.com/wp-content/sandbox334681-uploads/avatars/2/621e2ce403550-bpfull.png   ' 
-                            portada='https://online-communities.demos.buddyboss.com/wp-content/sandbox334681-uploads/buddypress/members/2/cover-image/621e2cf2a9e5d-bp-cover-image.jpg'
-                        />
-                    </div>
                     <div className="menu-subprofile-timeline">
                         <SubProfile />
                     </div>
