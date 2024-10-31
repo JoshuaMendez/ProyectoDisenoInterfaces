@@ -6,7 +6,11 @@ body {
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: stretch;
+}
+
+.profile-page {
+    width: 100%;
 }
 
 .middle-column-profile {

@@ -15,11 +15,10 @@ import './App.css';
 
 function App() {
     return (
-        <div className='container'>
-            <Navbar />
-            <Leftbar />
-            <div className='sub-container'>
-                <div className='content'>
+        <div className='main-container'>
+            <div className='left-column'>
+                <div className='navbar'><Navbar /></div>
+                <Leftbar />
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/profile" element={<ProfilePage />} />
@@ -32,10 +31,9 @@ function App() {
                         <Route path="/photos" element={<Photo/>}/>
                         {/* Añade más rutas según sea necesario */}
                     </Routes>
-                </div>
-                <div className="right-column">
-                    <LatestUpdates />
-                </div>
+            </div>
+            <div className="right-column">
+                <LatestUpdates />
             </div>
         </div>
     );
