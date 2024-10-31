@@ -1,7 +1,5 @@
 import React from 'react';
-import './groupes.css'
-import UserProfileComponent from '../../components/ProfileComponent/UserProfileComponent.jsx'; // Asegúrate de que la ruta sea correcta
-import SubProfile from '../../components/SubProfile/SubProfile';
+import './groupes.css';
 import Group from '../../components/group/group.jsx';
 
 function Groups() {

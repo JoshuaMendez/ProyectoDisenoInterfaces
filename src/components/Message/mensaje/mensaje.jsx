@@ -8,7 +8,7 @@ import './mensaje.css';
 const Mensaje = ({image,mensaje,nombre,hora}) => {
     return (
         <div className = "bloque-mensaje">
-            <img src={image} />
+            <img src={image} alt="" />
             <div id = "info-mensaje">
                 <h2>{nombre}<span>{hora}</span></h2>
                 <span class="contenido-mensaje">{mensaje}</span>

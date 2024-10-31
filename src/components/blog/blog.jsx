@@ -29,7 +29,7 @@ const Blog = () => {
             </div>
             <div class = "post-blog">
                 {blogPosts.map((post, index) => (
-                    <ItemBlog key={index} image={post.image} title={post.title} date={post.date} />
+                    <ItemBlog key={index} image={post.image} alt=""  title={post.title} date={post.date} />
                 ))}
             </div>
             <div class = "button-blog">

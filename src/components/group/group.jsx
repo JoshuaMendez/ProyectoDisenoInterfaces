@@ -5,10 +5,10 @@ function Group({name, perfil, portada, tipo, foto1, foto2, foto3}) {
     return (
     <div class="profile-container-group">
         <div class="profile-header">
-            <img src = {portada}  class="profile-banner-group"/>
+            <img src = {portada} alt="" class="profile-banner-group"/>
             <div class="profile-ctn">
                 <div class="profile-img-status">
-                    <img src = {perfil} class="profile-pic-group"/>
+                    <img src = {perfil} alt="" class="profile-pic-group"/>
                 </div>
             </div>
             <div class="profile-data-group">
@@ -18,9 +18,9 @@ function Group({name, perfil, portada, tipo, foto1, foto2, foto3}) {
         </div>
         <div class = "group-down-part">
             <div class="group-participants">
-                <img src = {foto1} class="profile-pic-down"/>
-                <img src ={foto2} class="profile-pic-down"/>
-                <img src = {foto3} class="profile-pic-down"/>
+                <img src = {foto1} alt="" class="profile-pic-down"/>
+                <img src ={foto2} alt="" class="profile-pic-down"/>
+                <img src = {foto3} alt="" class="profile-pic-down"/>
                 <i className="bb-icon-ellipsis-h"></i>
             </div>
             <div class="group-btn"> 
