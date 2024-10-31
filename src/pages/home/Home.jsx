@@ -4,7 +4,7 @@ import './Home.css';
 // import Navbar from '../../components/Navbar/Navbar.jsx'
 // import Leftbar from '../../components/Leftbar/Leftbar.jsx'
 import Blog from '../../components/blog/blog.jsx'
-// import Share from '../../components/Share/Share.jsx'
+import Share from '../../components/Share/Share.jsx'
 // import Post from '../../components/Post/Post.jsx'
 import Feed from '../../components/Feed/Feed.jsx'
 // import LatestUpdates from '../../components/LatestUpdates/latestUpdates.jsx'
@@ -23,6 +23,7 @@ function Home() {
                     <div className='seccion'>
                         <h1 className='activity-feed-title'>Activity Feed</h1>
                     </div>
+                    <Share />
                     <Feed />
                 </div>
             
