@@ -172,9 +172,57 @@
 #icono-teclado ul li{
     cursor: pointer;
 }
-#icono-teclado button{
+
+#icono-teclado button {
     background: orange;
     border: 1px solid orange;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;  /* Importante para animar el avión */
+    z-index: 10; /* Asegura que el avión esté por encima del fondo */
+}
+
+/* Contenedor del ícono */
+.icon-container {
+    display: inline-block; /* Permite que el contenedor se quede en su lugar */
+}
+
+/* Animación del avión de papel */
+.sendFlying {
+    animation: flyAnimation 2s forwards;
+    position: absolute;  /* El avión de papel se moverá sin afectar el contenedor */
+    top: 0;  /* Empieza en su posición original */
+    left: 0;
+}
+
+/* Animación de vuelo */
+@keyframes flyAnimation {
+    0% {
+        transform: translateY(0) translateX(0); /* Empieza en su lugar original */
+    }
+    100% {
+        transform: translateY(-150px) translateX(200px); /* Vuela hacia arriba y a la derecha */
+    }
+}
+
+.emoji-picker-container {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    z-index: 1000;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gif-picker-container {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    z-index: 100;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
