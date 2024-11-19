@@ -1,18 +1,55 @@
 .post {
-width: 100%;
-border-radius: 10px;
-background-color: white;
-border: 1px solid lightgray;
-margin: 20px 0;
-padding-top: 7px;
-padding-left: 10px;
-padding-right: 10px;
-padding-bottom: 10px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative; 
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin: 20px 0;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.heart-animation {
+  position: absolute; /* Para centrarlo sobre la imagen */
+  top: 50%; /* Mitad vertical */
+  left: 50%; /* Mitad horizontal */
+  transform: translate(-50%, -50%); /* Centrar completamente */
+  font-size: 100px; /* Tamaño grande del corazón */
+  color: #dd2e44; /* Color rojo */
+  pointer-events: none; /* Evitar interacción */
+  animation: fadeOutHeart 1s ease-in-out forwards; /* Animación suave */
+  z-index: 10; /* Asegurarse de que se muestre encima */
+}
+
+/* Animación de desvanecimiento y escala */
+@keyframes fadeOutHeart {
+  0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+
+.like-post-unClicked{
+  color: #dd2e44;
+
+}
 .postWrapper {
 padding: 10px;
+}
+
+.postImageWrapper {
+  position: relative; /* Necesario para posicionar el corazón */
+  display: inline-block; /* Asegura que el contenedor envuelva el contenido */
+  width: 100%; /* Ajusta al tamaño de la imagen */
+  max-height: 500px; /* Mantén la altura máxima de la imagen */
 }
 
 .post-divider-line {

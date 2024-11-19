@@ -7,10 +7,16 @@ import Comment from "./comment";
 export default function Post({ post }) {
     const [like, setLike] = useState(post.like || 0);
     const [isLiked, setIsLiked] = useState(false);
+    const [showHeart, setShowHeart] = useState(false);
 
     const likeHandler = () => {
         setLike(isLiked ? like - 1 : like + 1);
         setIsLiked(!isLiked);
+
+        if (!isLiked) {
+            setShowHeart(true);
+            setTimeout(() => setShowHeart(false), 1000); 
+        }
     };
 
     const user = Users.find((u) => u.id === post?.userId);
@@ -22,7 +28,7 @@ export default function Post({ post }) {
                     <div className="postTopLeft">
                         <img
                             className="postProfileImg"
-                            src={user?.profilePicture || "default-profile.png"} // Imagen predeterminada si falta la imagen
+                            src={user?.profilePicture || "default-profile.png"}
                             alt=""
                         />
                         <span className="postUsername-feed">
@@ -30,15 +36,18 @@ export default function Post({ post }) {
                             <span className="postDate">{post.date || "Unknown date"}</span>
                         </span>
                     </div>
-                    {/* <div className="postTopRight"></div> */}
                 </div>
                 <div className="postCenter">
                     <span className="postText">{post?.desc || "No description available."}</span>
-                    {post.photo && <img className="postImg" src={post.photo} alt="Post" />}
+                    {post.photo && (
+                        <div className="postImageWrapper">
+                            <img className="postImg" src={post.photo} alt="Post" />
+                            {showHeart && <div className="heart-animation">❤️</div>} {/* Corazón aquí */}
+                        </div>
+                    )}
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        
                         <span className="postLikeCounter">{like} people like it</span>
                     </div>
                     <div className="postBottomRight">
@@ -48,7 +57,12 @@ export default function Post({ post }) {
                 <div className="post-divider-line"></div>
                 <div className="love-and-comment">
                     <div className="post-love">
-                        <div className={isLiked? "bb-icon-f bb-icon-heart like-post-unClicked" : "bb-icon-l bb-icon-heart"}  onClick={likeHandler}> <span className="in-love-no-color">Love</span></div>
+                        <div
+                            className={isLiked ? "bb-icon-f bb-icon-heart like-post-unClicked" : "bb-icon-l bb-icon-heart"}
+                            onClick={likeHandler}
+                        >
+                            <span className="in-love-no-color">Love</span>
+                        </div>
                     </div>
                     <div className="post-comment-inner">
                         <div className="bb-icon-l bb-icon-comment-square"><span className="in-comment-inner">Comment</span></div>
@@ -56,14 +70,14 @@ export default function Post({ post }) {
                 </div>
                 <div className="post-divider-line"></div>
                 <div className="post-comment">
-                    <Comment comments = {post.comment} ></Comment>
+                    <Comment comments={post.comment} />
                     <div className="commentInputWrapper">
                         <div className="input-comment">
                             <div className="profile-picture-comment">
                                 <img
-                                className="postProfileImg"
-                                src={user?.profilePicture || 'default-profile.png'}
-                                alt=""
+                                    className="postProfileImg"
+                                    src={user?.profilePicture || 'default-profile.png'}
+                                    alt=""
                                 />
                             </div>
                             <div className="comment-container">
@@ -80,6 +94,7 @@ export default function Post({ post }) {
                         </div>
                     </div>
                 </div>
+                {}
             </div>
         </div>
     );

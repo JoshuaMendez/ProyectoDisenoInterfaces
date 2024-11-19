@@ -52,7 +52,27 @@
     color: #dd2e44;
 
 }
-
+.heart-animation-comment {
+    position: absolute; /* Posiciona dinámicamente según las coordenadas */
+    font-size: 20px; /* Tamaño del corazón */
+    color: #dd2e44;
+    pointer-events: none; /* Evita interacción con el corazón animado */
+    animation: flyUpHeart 1s ease-in-out forwards; /* Animación */
+    transform: translate(-50%, -50%); /* Centrado sobre el punto de clic */
+    z-index: 10;
+  }
+  
+  @keyframes flyUpHeart {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -150%) scale(1.5); /* Sube y crece ligeramente */
+    }
+  }
+  
 .postComment{
     padding: 10px;
     background-color: #f9f9f9;
