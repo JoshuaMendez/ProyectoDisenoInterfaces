@@ -346,3 +346,49 @@ export const Posts = [
     ] 
 },
 ];
+export const Grupos = [{
+    name:"MMA lovers",
+    perfil:"https://a.espncdn.com/i/headshots/mma/players/full/3022677.png",
+    foto1:"https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/0ea5c-princesa-jazmin-disney-png.png?fit=500%2C500&ssl=1",
+    foto2:"https://w7.pngwing.com/pngs/631/446/png-transparent-disney-princess-illustration-belle-princess-aurora-cinderella-rapunzel-princess-jasmine-beauty-and-the-beast-disney-princess-beast-doll-thumbnail.png",
+    foto3:"https://w7.pngwing.com/pngs/23/472/png-transparent-princess-aurora-princess-jasmine-disney-princess-sleeping-beauty-aurora-princess-thumbnail.png",
+    tipo:"Public",
+    portada:"https://s3.sportstatics.com/relevo/www/multimedia/202210/05/media/cortadas/lozanoafl-RUQ4DDnR5W83otTnBP2qCcM-1200x648@Relevo.jpg"
+},
+{
+    name:"MMA lovers",
+    perfil:"https://a.espncdn.com/i/headshots/mma/players/full/3022677.png",
+    foto1:"https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/0ea5c-princesa-jazmin-disney-png.png?fit=500%2C500&ssl=1",
+    foto2:"https://w7.pngwing.com/pngs/631/446/png-transparent-disney-princess-illustration-belle-princess-aurora-cinderella-rapunzel-princess-jasmine-beauty-and-the-beast-disney-princess-beast-doll-thumbnail.png",
+    foto3:"https://w7.pngwing.com/pngs/23/472/png-transparent-princess-aurora-princess-jasmine-disney-princess-sleeping-beauty-aurora-princess-thumbnail.png",
+    tipo:"Public",
+    portada:"https://s3.sportstatics.com/relevo/www/multimedia/202210/05/media/cortadas/lozanoafl-RUQ4DDnR5W83otTnBP2qCcM-1200x648@Relevo.jpg"
+},{
+    name:"MMA lovers",
+    perfil:"https://a.espncdn.com/i/headshots/mma/players/full/3022677.png",
+    foto1:"https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/0ea5c-princesa-jazmin-disney-png.png?fit=500%2C500&ssl=1",
+    foto2:"https://w7.pngwing.com/pngs/631/446/png-transparent-disney-princess-illustration-belle-princess-aurora-cinderella-rapunzel-princess-jasmine-beauty-and-the-beast-disney-princess-beast-doll-thumbnail.png",
+    foto3:"https://w7.pngwing.com/pngs/23/472/png-transparent-princess-aurora-princess-jasmine-disney-princess-sleeping-beauty-aurora-princess-thumbnail.png",
+    tipo:"Public",
+    portada:"https://s3.sportstatics.com/relevo/www/multimedia/202210/05/media/cortadas/lozanoafl-RUQ4DDnR5W83otTnBP2qCcM-1200x648@Relevo.jpg"
+}]
+
+export const Cursos = [
+{  portada:"https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" ,
+    titulo:"HALO 1" ,
+    cantidadLessons: 10
+},{  portada:"https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" ,
+    titulo:"HALO 1" ,
+    cantidadLessons: 10
+},{  portada:"https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" ,
+    titulo:"HALO 1" ,
+    cantidadLessons: 10
+}
+]
+
+export const Fotos = [{foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
+    {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
+    {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
+    {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
+    {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"}
+]
