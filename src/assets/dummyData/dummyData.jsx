@@ -1,3 +1,16 @@
+import amg1 from '../../assets/images/person/2.png';
+import amg2 from '../../assets/images/person/3.jpg';
+import amg3 from '../../assets/images/person/4.jpg';
+import amg4 from '../../assets/images/person/5.jpg';
+import amg5 from '../../assets/images/person/6.jpg';
+import image1 from  "../images/person/1.png";
+import image2 from  "../images/person/2.png";
+import image3 from  "../images/person/3.jpg";
+import image4 from  "../images/person/4.jpg";
+import image5 from  "../images/person/5.jpg";
+import image6 from  "../images/person/6.jpg";
+import image7 from  "../images/person/7.png";
+import image8 from "../images/person/8.png";
 export const Users = [
 {
     id:1,
@@ -392,3 +405,94 @@ export const Fotos = [{foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-Nv
     {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
     {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"}
 ]
+export const BlogPosts = [
+    {
+        image: 'https://www.tarlogic.com/wp-content/uploads/2023/09/riesgos-seguridad-IA-3.jpg',
+        title: 'La IA y el futuro de la humanidad',
+        date: '2024-09-01'
+    },
+    {
+        image: 'https://latam.kaspersky.com/content/es-mx/images/repository/isc/2020/cyber-security-article.jpg',
+        title: 'La ingeniería social y la ciberseguridad',
+        date: '2024-10-02'
+    },
+    {
+        image: 'https://www.grupocibernos.com/hs-fs/hubfs/50.png?width=960&name=50.png',
+        title: 'La ciberseguridad en la nube',
+        date: '2024-09-11'
+    }
+];
+export const Amigos = [
+    {
+        nombre: 'Steven Spielberg',
+        imagen: amg1
+    },
+    {
+        nombre: 'Jane Smith',
+        imagen: amg2
+    },
+    {
+        nombre: 'Sam Wilson',
+        imagen: amg3
+    },
+    {
+        nombre: 'John Doe',
+        imagen: amg4
+    },
+    {
+        nombre: 'Jane Doe',
+        imagen: amg5
+    }
+];
+
+
+export const Updates = [
+    {
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnXe_ieqBthtJEu_APkg9ECuUwhIOI4IVtg&s',
+        title: 'John posted an update',
+        date: '1 minute ago'
+    },
+    {
+        image: 'https://a.ltrbxd.com/resized/sm/upload/db/2x/a6/v6/harrypotter-1200-1200-675-675-crop-000000.jpg?v=7f87bbd1ff',
+        title: 'Adele posted an update',
+        date: '20 minutes ago'
+    },
+    {
+        image: 'https://th.bing.com/th/id/OIP.WGbPMH8cEmqepMQ_ZQ-i6wHaKD?rs=1&pid=ImgDetMain',
+        title: 'Gabriel posted an update ',
+        date: '1 hour ago'
+    },
+    {
+        image: 'https://img001.prntscr.com/file/img001/sAKPdBnDSLOs8XC3cXTAXA.png',
+        title: 'Daniela ghosted you ',
+        date: '4 hours ago'
+    }
+];
+
+export const Notificaciones = [
+    {nombre : "Sebastián",
+    fecha:"31 Oct 2024", 
+    descripcion:"Sebastián comentó en tu publicación", 
+    image:"https://media.licdn.com/dms/image/v2/D4E03AQFWLYd4U2IykQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726429797240?e=1735776000&v=beta&t=USojFEa4nB8DGcQHObU4CQx1OoXSrEx1Cu-EyJv3e8U" 
+} ,{
+    nombre : "Juliana",
+    fecha:"1 Nov 2024", 
+    descripcion:"Juliana le gustó tu imagen", 
+    image:"https://media.licdn.com/dms/image/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_200_200/0/1715274045600?e=2147483647&v=beta&t=6fvPqhD8LWK_kcsVnpNEvkyTyOLI-APzYCUKhC34MxA" 
+},{  
+    nombre : "Esteban",
+    fecha:"3 Nov 2024", 
+    descripcion:"Esteban comentó en tu publicación", 
+    image:"https://akamai.sscdn.co/uploadfile/letras/fotos/a/7/f/b/a7fba5f1cd128cba1548e8a0aa5d6360.jpg" 
+}
+]
+export const Amigos2 = [
+    { nombre: 'John Doe', imagen: image1 },
+    { nombre: 'Jane Smith', imagen: image2 },
+    { nombre: 'Sam Wilson', imagen: image3 },
+    { nombre: 'Sam Wilson', imagen: image4 },
+    { nombre: 'Sam Wilson', imagen: image5 },
+    { nombre: 'Sam Wilson', imagen: image6 },
+    { nombre: 'Sam Wilson', imagen: image7 },
+    { nombre: 'Sam Wilson', imagen: image8 }
+];

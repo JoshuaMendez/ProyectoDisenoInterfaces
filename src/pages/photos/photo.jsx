@@ -23,7 +23,7 @@ function Photo() {
                     </nav>
                     <div className="collegue-photos">
                         {Fotos.map((photo) => (
-                                <img src={photo.foto}  />
+                                <img src={photo.foto} alt = {photo.foto} />
                         ))}
                     </div>
                 </div>
