@@ -81,7 +81,28 @@ body {
     cursor: pointer;
     transition: 0.5s all;
     border : 1px solid #9c9c9c;
+}
+.collegue-photos img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.collegue-photos img:active {
+    animation: shake 0.5s infinite;
+    transform: rotate(5deg);
+}
 
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(5deg); }
+    10% { transform: translate(-1px, -2px) rotate(4deg); }
+    20% { transform: translate(-3px, 0px) rotate(6deg); }
+    30% { transform: translate(3px, 2px) rotate(5deg); }
+    40% { transform: translate(1px, -1px) rotate(6deg); }
+    50% { transform: translate(-1px, 2px) rotate(4deg); }
+    60% { transform: translate(-3px, 1px) rotate(5deg); }
+    70% { transform: translate(3px, 1px) rotate(4deg); }
+    80% { transform: translate(-1px, -1px) rotate(6deg); }
+    90% { transform: translate(1px, 2px) rotate(5deg); }
+    100% { transform: translate(1px, -2px) rotate(4deg); }
 }
 .ctr-head h3{
     font-size: 20px;

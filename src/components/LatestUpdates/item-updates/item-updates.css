@@ -16,7 +16,10 @@
     margin-right: 10px; /* Añade un margen a la derecha para espaciar la imagen del texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.update-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
 .update-title {
     font-family: apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
     font-size: 12px;
