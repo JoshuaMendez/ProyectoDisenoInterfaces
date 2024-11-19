@@ -14,6 +14,16 @@ const Box = () => {
             image: "https://media.licdn.com/dms/image/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_200_200/0/1715274045600?e=2147483647&v=beta&t=6fvPqhD8LWK_kcsVnpNEvkyTyOLI-APzYCUKhC34MxA"
         }
     ]);
+    const [isFlying, setIsFlying] = useState(false);
+
+    const handleSend = () => {
+        setIsFlying(true); // Activar la animación de vuelo
+
+        // Desactivar la animación después de 2 segundos (la duración de la animación)
+        setTimeout(() => {
+            setIsFlying(false);
+        }, 2000);
+    };
 
     return (
         <div className="bloque-box">
@@ -74,7 +84,12 @@ const Box = () => {
                             <ul>
                                 <li><i className="bb-icon-font" aria-label="Change font"></i></li>
                                 <li><i className="bb-icon-emoticon-smile" aria-label="Insert emoji"></i></li>
-                                <button><i className="bb-icon-location-arrow" aria-label="Send location"></i></button>
+                                {/* Aquí está el contenedor del botón con animación */}
+                                <div className="icon-container">
+                                    <button onClick={handleSend}>
+                                        <i className={`bb-icon-paper-plane ${isFlying ? 'sendFlying' : ''}`}></i>
+                                    </button>
+                                </div>
                             </ul>
                         </div>
                     </div>
