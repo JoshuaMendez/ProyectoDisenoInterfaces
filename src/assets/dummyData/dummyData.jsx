@@ -389,13 +389,13 @@ export const Grupos = [{
 export const Cursos = [
 {  portada:"https://th.bing.com/th/id/OIP.Kh8FxmTS-rqhiblYODYE2wHaE7?rs=1&pid=ImgDetMain" ,
     titulo:"Pincipios de python" ,
-    cantidadLessons: 10
-},{  portada:"https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" ,
-    titulo:"HALO 1" ,
-    cantidadLessons: 10
-},{  portada:"https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" ,
-    titulo:"HALO 1" ,
-    cantidadLessons: 10
+    cantidadLessons: 23},
+    {  portada:"https://pinguinodigital.com/wp-content/uploads/2020/07/estilos-de-p%C3%A1ginas-web5.jpeghttps://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" ,
+        titulo:"Paginas Web" ,
+        cantidadLessons: 11
+},{  portada:"https://th.bing.com/th/id/R.6c9a3872d9b7fe274ffac8a303aeb82d?rik=ieGwngG5qlhJfQ&riu=http%3a%2f%2fwww.loyvan.com%2fwp-content%2fuploads%2f2014%2f04%2fred-de-datos.jpg&ehk=9H6hXrXUIyXgi7EqBDmg7w%2bZgIX%2fr94%2f65f%2bMIwokGg%3d&risl=&pid=ImgRaw&r=0" ,
+    titulo:"Redes de Datos" ,
+    cantidadLessons: 11
 }
 ]
 
