@@ -360,35 +360,35 @@ export const Posts = [
 },
 ];
 export const Grupos = [{
-    name:"MMA lovers",
-    perfil:"https://a.espncdn.com/i/headshots/mma/players/full/3022677.png",
+    name:"AGRA lovers",
+    perfil:"https://niixer.com/wp-content/uploads/2023/02/Picsart_23-03-09_21-08-46-956.jpg",
     foto1:"https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/0ea5c-princesa-jazmin-disney-png.png?fit=500%2C500&ssl=1",
     foto2:"https://w7.pngwing.com/pngs/631/446/png-transparent-disney-princess-illustration-belle-princess-aurora-cinderella-rapunzel-princess-jasmine-beauty-and-the-beast-disney-princess-beast-doll-thumbnail.png",
     foto3:"https://w7.pngwing.com/pngs/23/472/png-transparent-princess-aurora-princess-jasmine-disney-princess-sleeping-beauty-aurora-princess-thumbnail.png",
     tipo:"Public",
-    portada:"https://s3.sportstatics.com/relevo/www/multimedia/202210/05/media/cortadas/lozanoafl-RUQ4DDnR5W83otTnBP2qCcM-1200x648@Relevo.jpg"
+    portada:"https://www.grapheverywhere.com/wp-content/uploads/2019/07/pic004.jpg"
 },
 {
-    name:"MMA lovers",
-    perfil:"https://a.espncdn.com/i/headshots/mma/players/full/3022677.png",
+    name:"Club Java",
+    perfil:"https://www.mytaskpanel.com/wp-content/uploads/2023/04/consulting-blog-09.webp",
     foto1:"https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/0ea5c-princesa-jazmin-disney-png.png?fit=500%2C500&ssl=1",
     foto2:"https://w7.pngwing.com/pngs/631/446/png-transparent-disney-princess-illustration-belle-princess-aurora-cinderella-rapunzel-princess-jasmine-beauty-and-the-beast-disney-princess-beast-doll-thumbnail.png",
     foto3:"https://w7.pngwing.com/pngs/23/472/png-transparent-princess-aurora-princess-jasmine-disney-princess-sleeping-beauty-aurora-princess-thumbnail.png",
     tipo:"Public",
-    portada:"https://s3.sportstatics.com/relevo/www/multimedia/202210/05/media/cortadas/lozanoafl-RUQ4DDnR5W83otTnBP2qCcM-1200x648@Relevo.jpg"
+    portada:"https://static.vecteezy.com/system/resources/previews/022/100/214/original/java-logo-transparent-free-png.png"
 },{
-    name:"MMA lovers",
-    perfil:"https://a.espncdn.com/i/headshots/mma/players/full/3022677.png",
+    name:"React lover",
+    perfil:"https://th.bing.com/th/id/OIP.Bil7q6xfmqrjDXWZ8iL7sQHaDt?rs=1&pid=ImgDetMain.png",
     foto1:"https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/0ea5c-princesa-jazmin-disney-png.png?fit=500%2C500&ssl=1",
     foto2:"https://w7.pngwing.com/pngs/631/446/png-transparent-disney-princess-illustration-belle-princess-aurora-cinderella-rapunzel-princess-jasmine-beauty-and-the-beast-disney-princess-beast-doll-thumbnail.png",
     foto3:"https://w7.pngwing.com/pngs/23/472/png-transparent-princess-aurora-princess-jasmine-disney-princess-sleeping-beauty-aurora-princess-thumbnail.png",
     tipo:"Public",
-    portada:"https://s3.sportstatics.com/relevo/www/multimedia/202210/05/media/cortadas/lozanoafl-RUQ4DDnR5W83otTnBP2qCcM-1200x648@Relevo.jpg"
+    portada:"https://th.bing.com/th/id/R.f81a6f373c244b1f70f4b7402b5ab372?rik=rbXh4ieLuKt%2bmA&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f09%2fReact_logo_logotype_emblem.png&ehk=QhGOkKcUKCU7FBQgHOajOiJqJBACUTD2Ni6LsfqzCEA%3d&risl=&pid=ImgRaw&r=0"
 }]
 
 export const Cursos = [
-{  portada:"https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" ,
-    titulo:"HALO 1" ,
+{  portada:"https://th.bing.com/th/id/OIP.Kh8FxmTS-rqhiblYODYE2wHaE7?rs=1&pid=ImgDetMain" ,
+    titulo:"Pincipios de python" ,
     cantidadLessons: 10
 },{  portada:"https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/07/19/halo-p.jpeg" ,
     titulo:"HALO 1" ,
@@ -399,11 +399,11 @@ export const Cursos = [
 }
 ]
 
-export const Fotos = [{foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
-    {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
-    {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
-    {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"},
-    {foto:"https://media.licdn.com/dms/image/v2/D4E03AQFeha-NvXWoDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715274045600?e=1735776000&v=beta&t=WF-AIf4v5qx-j7TzZQCYtZB2EaWcxFqIPqL-JD4st0g"}
+export const Fotos = [{foto:"https://static.vecteezy.com/system/resources/previews/015/571/212/original/education-and-knowledge-books-for-learning-suitable-for-poster-web-and-mobile-services-in-flat-style-cartoon-hand-drawn-templates-illustration-vector.jpg"},
+    {foto:"https://th.bing.com/th/id/OIP.q76DDR4iHhYJ4Ps3bu4A_gHaE8?rs=1&pid=ImgDetMain"},
+    {foto:"https://th.bing.com/th/id/OIP.TlB0zjlPuynWyHoMaokukgHaEK?rs=1&pid=ImgDetMain"},
+    {foto:"https://static.vecteezy.com/system/resources/previews/011/116/274/non_2x/education-concept-with-cartoon-character-vector.jpg"},
+    {foto:"https://th.bing.com/th/id/OIP.kmLTYzArjAj6MuU-X3jxFAHaE8?rs=1&pid=ImgDetMain"}
 ]
 export const BlogPosts = [
     {
