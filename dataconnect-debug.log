@@ -1,0 +1,13 @@
+I1121 14:44:48.383244   25548 load.go:37] Reloading schema and connectors...
+I1121 14:44:48.461977   25548 control.go:45] [engine.Service /emulator/ProyectoDisenoInterfaces 063c] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1121 14:44:48.472218   25548 control.go:73] [engine.Service /emulator/ProyectoDisenoInterfaces 063c] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I1121 14:44:48.513773   25548 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\Joshua\\Desktop\\ProyectoDisenoInterfaces\\dataconnect-generated\\js\\default-connector"
+I1121 14:44:48.513773   25548 collector.go:107] schema extensions wrote into "C:\\Users\\Joshua\\Desktop\\ProyectoDisenoInterfaces\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [65151B] 
+I1121 14:44:48.524383   25548 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\Joshua\\Desktop\\ProyectoDisenoInterfaces\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.d.ts [264B] esm\index.esm.js [197B] esm\package.json [17B] index.cjs.js [238B] package.json [623B] 
+I1121 14:44:48.536140   25548 load.go:115] Finished reloading
+I1121 14:44:48.541948   25548 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1121 14:44:48.543093   25548 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I1121 14:44:52.985247   25548 control.go:45] [engine.Service /emulator/ProyectoDisenoInterfaces 1d19] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1121 14:44:52.985247   25548 control.go:73] [engine.Service /emulator/ProyectoDisenoInterfaces 1d19] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
