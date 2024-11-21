@@ -4,7 +4,6 @@ import '../../assets/icons/css/bb-icons.css';
 import Chat from './chat/chat.jsx';
 import Mensaje from './mensaje/mensaje.jsx';
 import EmojiPicker from 'emoji-picker-react';
-import { Grid } from '@giphy/react-components';
 import { GiphyFetch } from '@giphy/js-fetch-api';
 
 const gf = new GiphyFetch('GPRTssyjzZTiB5h4mhZGymgkFYR6cqv5'); // Reemplaza con tu API Key de Giphy
@@ -23,25 +22,24 @@ const Box = () => {
     const [isFlying, setIsFlying] = useState(false);
     const [showEmojiPicker, setShowEmojiPicker] = useState(false);
     const [showGifPicker, setShowGifPicker] = useState(false);
+    const [gifs, setGifs] = useState([]);
 
-    // Maneja el envío del mensaje con animación de avión de papel
-    const handleSend = () => {
-        setIsFlying(true);
-        setTimeout(() => {
-            setIsFlying(false);
-        }, 2000);
-    };
-
-    // Toggle para mostrar y ocultar el picker de emoji
+    // Toggle para mostrar/ocultar el picker de emoji
     const toggleEmojiPicker = () => {
         setShowEmojiPicker(!showEmojiPicker);
-        setShowGifPicker(false); // Cierra el picker de GIFs si está abierto
+        setShowGifPicker(false); // Cierra el picker de GIFs
     };
 
-    // Toggle para mostrar y ocultar el picker de GIFs
+    // Toggle para mostrar/ocultar el picker de GIFs
     const toggleGifPicker = () => {
         setShowGifPicker(!showGifPicker);
-        setShowEmojiPicker(false); // Cierra el picker de emojis si está abierto
+        setShowEmojiPicker(false); // Cierra el picker de emojis
+    };
+
+    // Manejo del envío del mensaje
+    const handleSend = () => {
+        setIsFlying(true);
+        setTimeout(() => setIsFlying(false), 2000);
     };
 
     // Maneja la selección de un emoji
@@ -50,27 +48,41 @@ const Box = () => {
         setShowEmojiPicker(false);
     };
 
-    const fetchGifs = async (offset) => {
+    // Función para obtener los GIFs
+    const fetchGifs = async (offset = 0) => {
         try {
-            const response = await gf.trending({ offset, limit: 10 });
-            console.log(response); // Esto te ayudará a ver si la API responde correctamente
-            if (response.data && response.data.length > 0) {
-                return response.data;  // Devuelve los GIFs si la respuesta es válida
-            } else {
-                console.error('No GIFs found.');
-                return [];  // Si no se encuentran GIFs, devuelve un array vacío
+            const response = searchTerm
+                ? await gf.search(searchTerm, { offset, limit: 10 }) // Búsqueda personalizada
+                : await gf.trending({ offset, limit: 10 }); // GIFs de tendencia
+    
+            console.log('Giphy API response:', response); // Ver respuesta de la API
+
+            if (!response || !response.data || response.data.length === 0) {
+                console.log('No GIF data found');
+                setGifs([]); // Si no hay GIFs, setea un arreglo vacío
+                return [];
             }
+    
+            setGifs(response.data); // Almacena los GIFs en el estado
         } catch (error) {
-            console.error('Error fetching GIFs:', error);  // Maneja el error si la solicitud falla
-            return [];  // Devuelve un array vacío en caso de error
+            console.error('Error fetching GIFs:', error);
+            setGifs([]); // Si hay error, setea un arreglo vacío
         }
     };
 
-    // Maneja la selección de un GIF
+    // Inserta el GIF seleccionado como HTML (imagen) en el input
     const onGifSelect = (gif) => {
-        setInputValue((prevInput) => prevInput + `![GIF](${gif.url})`);  // Inserta el GIF como una URL en markdown
-        setShowGifPicker(false); // Cierra el picker tras seleccionar un GIF
+        setInputValue((prevInput) => prevInput + `<img src="${gif.images.fixed_height.url}" alt="GIF" class="gif-preview" />`);
+        setShowGifPicker(false);
     };
+
+    useEffect(() => {
+        if (searchTerm) {
+            fetchGifs(); // Busca GIFs cuando cambia el término de búsqueda
+        } else {
+            fetchGifs(); // Si no hay término de búsqueda, carga los GIFs de tendencia
+        }
+    }, [searchTerm]);
 
     return (
         <div className="bloque-box">
@@ -117,11 +129,11 @@ const Box = () => {
                     />
                 </div>
                 <div id="teclado">
-                    <input 
-                        type="text" 
+                    <div 
+                        id="message-input" 
+                        contentEditable
                         placeholder="Type a message"
-                        value={inputValue}
-                        onChange={(e) => setInputValue(e.target.value)}
+                        dangerouslySetInnerHTML={{ __html: inputValue }}  // Inserta el HTML (GIFs y texto)
                     />
                     <div id="icono-teclado">
                         <div id="iconos-left">
@@ -156,13 +168,21 @@ const Box = () => {
                     )}
                     {showGifPicker && (
                         <div className="gif-picker-container">
-                            <Grid
-                                fetchGifs={fetchGifs}
-                                width={300}
-                                columns={3}
-                                gutter={6}
-                                onGifClick={onGifSelect}
-                            />
+                            <div className="gif-grid">
+                                {gifs.length === 0 ? (
+                                    <p>No GIFs found!</p>
+                                ) : (
+                                    gifs.map((gif, index) => (
+                                        <img
+                                            key={index}
+                                            src={gif.images.fixed_height.url}  // Muestra el GIF
+                                            alt="GIF"
+                                            onClick={() => onGifSelect(gif)}  // Llama a onGifSelect al hacer clic
+                                            className="gif-item"  // Aplica la clase para el estilo
+                                        />
+                                    ))
+                                )}
+                            </div>
                         </div>
                     )}
                 </div>
